@@ -2,7 +2,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 
 
-| **[Overview](#overview)** | **[Capstone Project Ideas](#capproideas)**
+**[Overview](#overview)** | **[Capstone Project Ideas](#capproideas)**
 
 ### OVERVIEW <a id='overview'></a>
 
