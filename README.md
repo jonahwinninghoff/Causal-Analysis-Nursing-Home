@@ -4,9 +4,9 @@
 
 | **[Overview](#overview)** | **[Capstone Project Ideas](#capproideas)**
 
-<a id='overview'> ### OVERVIEW </a>
+### OVERVIEW <a id='overview'></a>
 
-<a id='capproideas'> ### CAPSTONE PROJECT IDEAS: </a>
+### CAPSTONE PROJECT IDEAS: <a id='capproideas'></a>
 
 Automatic caption is unable to deal with specific terminology, which needs to be addressed. Sound classification algorithms can be useful to determine what topics they talk about. When being identified, the automatic caption can detect what kind of jargons they might use and incorporate them. This dataset is not available. But it can be created through web scraping. The data collection needs to be included.
 
