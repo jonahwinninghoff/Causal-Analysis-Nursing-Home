@@ -12,10 +12,12 @@ After reviewing on previous data for capstone project ideas, the criteria is not
 
 ### CAPSTONE PROJECT IDEAS: <a id='capproideas'></a>
 
-**[ ]** An international team of researchers has created a dataset of 343 cities’ CO2 emissions. The researchers aggregated and standardized the emissions data — largely self-reported — from three sources: the Carbon Disclosure Project, the Bonn Center for Local Climate Action and Reporting, and a new project at Peking University. The dataset includes cities large and small, from Lagos and Shanghai to Kadıovacık, Turkey (pop. 216) and Brisbane, California (pop. ~4,700). In addition to emissions, the dataset also provides contextual information about the cities, such as average household sizes and gasoline prices.
+**[ ]** Common Vulnerabilities and Exposures is a downloadable list of more than 110,000 “publicly known cybersecurity vulnerabilities.” Each vulnerability is assigned a unique identifier (e.g., CVE-2014-0160) and given a description. The National Institute of Standards and Technology’s National Vulnerability Database takes the list and adds more information for each entry, “such as fix information, severity scores, and impact ratings.” That database is available in a variety of bulk downloads and data feeds; you can also search it online. [h/t GitHub user "nanoseconds"]
 
-- [Data](https://www.nature.com/articles/sdata2018280?WT.ec_id=SDATA-201901)
-- [Pangea](https://doi.pangaea.de/10.1594/PANGAEA.884141)
-- [City Emission](https://data.cdp.net/Emissions/2016-Citywide-GHG-Emissions/dfed-thx7)
-- [Carbonn](https://carbonn.org/)
-
+- https://cve.mitre.org/
+- https://cve.mitre.org/data/downloads/index.html
+- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160
+- https://nvd.nist.gov/
+- https://cve.mitre.org/about/cve_and_nvd_relationship.html
+- https://nvd.nist.gov/vuln/data-feeds
+- https://nvd.nist.gov/vuln/search
