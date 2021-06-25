@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Problem Statement](#problem statement)** | **[Context](#context)** | **[Criteria for Success](#criteria)** | **[Constraints](#constraints)** | **[Stakeholders](#stakeholders)** | **[Scope of Solution Space](#scope)** | **[Data Sources](#sources)**
+**[Overview](#overview)** | **[Problem Statement](#problem)** | **[Context](#context)** | **[Criteria for Success](#criteria)** | **[Constraints](#constraints)** | **[Stakeholders](#stakeholders)** | **[Scope of Solution Space](#scope)** | **[Data Sources](#sources)**
 
 
 ### OVERVIEW <a id='overview'></a>
@@ -14,7 +14,7 @@ There is evidence that elders relying on long-supporting services are particular
 Ensuring that the project proposal is deliverable, the discussion is in extent of a few key questions and problem identification. One of key questions is—for example—that one would like to know why the potential client might care about this problem and how it can be solved. The problem identification comprises seven sections, as follow: problem statement formation, context, criteria for success, constraints, stakeholders, scope of solution space, and data sources. When this identification is established, the discussion about a few key questions will be next.
 
 
-### PROBLEM STATEMENT <a id='problem statement'></a>
+### PROBLEM STATEMENT <a id='problem'></a>
 
 Given that nursing home industry in western region relies on trust of consumers as a public good, what is a cheaper method to identify the percentage of rating system inconsistent with quality of nursing services and what is an alternative measurement 10% more accurate than rating system as a baseline before August 1, 2021.
 
