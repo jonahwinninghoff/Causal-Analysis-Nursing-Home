@@ -9,7 +9,7 @@
 
 ### OVERVIEW <a id='overview'></a>
 
-There is evidence that elders relying on long-supporting services are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that COVID-19 pandemic holds key metrics to reveal some answers, the rating of supporting services proves to be misleading (Silver-greenberg and Gebeloff, 2021). The technological challenge is to find more appropriate approach that can support decision-makers who want to send elders to nursing homes. This is the purpose of project proposal.
+There is evidence that elders relying on long-supporting services are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that COVID-19 pandemic holds key metrics to reveal some answers, the rating of supporting services proves to be misleading ([Silver-greenberg and Gebeloff, 2021](#silver-greenberg)). The technological challenge is to find more appropriate approach that can support decision-makers who want to send elders to nursing homes. This is the purpose of project proposal.
 
 Ensuring that the project proposal is deliverable, the discussion is in extent of a few key questions and problem identification. One of key questions is—for example—that one would like to know why the potential client might care about this problem and how it can be solved. The problem identification comprises seven sections, as follow: problem statement formation, context, criteria for success, constraints, stakeholders, scope of solution space, and data sources. When this identification is established, the discussion about a few key questions will be next.
 
@@ -39,5 +39,5 @@ Given that nursing home industry in western region relies on trust of consumers 
 
 Hawes C. Elder Abuse in Residential Long-Term Care Settings: What Is Known and What Information Is Needed? In: National Research Council (US) Panel to Review Risk and Prevalence of Elder Abuse and Neglect; Bonnie RJ, Wallace RB, editors. Elder Mistreatment: Abuse, Neglect, and Exploitation in an Aging America. Washington (DC): National Academies Press (US); 2003. 14.
 
-Silver-greenberg, Jessica, and Robert Gebeloff. “Maggots, Rape and Yet Five Stars: How U.S. Ratings of Nursing Homes Mislead the Public.” How U.S. Ratings of Nursing Homes Mislead the Public, The New York Times, 13 Mar. 2021.
+Silver-greenberg, Jessica, and Robert Gebeloff. “Maggots, Rape and Yet Five Stars: How U.S. Ratings of Nursing Homes Mislead the Public.” How U.S. Ratings of Nursing Homes Mislead the Public, The New York Times, 13 Mar. 2021. <a id = 'silver-greenberg'></a>
 
