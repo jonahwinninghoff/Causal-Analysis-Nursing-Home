@@ -8,7 +8,7 @@
 
 ### OVERVIEW <a id='overview'></a>
 
-There are three different possible ideas for the data science projects. Please select one of three projects that you think I should start with.
+There are three different capstone project ideas that should start with. The first idea is to develop automatic caption that can deal with jargons in specific field. The second idea is to understand the nature of COVID-19 pandemic economy that helps understand how to respond to climate change's series of pandemic. The third idea is to find a way to alleviate the incidents of ANEA among nursing home. The third idea is being chosen because the datasets are rich and there are several other datasets that can be merged.  
 
 ### CAPSTONE PROJECT IDEAS: <a id='capproideas'></a>
 
