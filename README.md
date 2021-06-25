@@ -1,40 +1,43 @@
-# CAPSTONE PROJECT IDEAS
+# Nursing Home Capstone Project
 
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Capstone Project Ideas](#capproideas)**
+**[Overview](#overview)** | **[Problem Statement](#problem statement)** | **[Context](#context)** | **[Criteria for Success](#criteria)** | **[Constraints](#constraints)** | **[Stakeholders](#stakeholders)** | **[Scope of Solution Space](#scope)** | **[Data Sources](#sources)**
+
 
 ### OVERVIEW <a id='overview'></a>
 
-There are three different capstone project ideas that should start with. The first idea is to develop automatic caption that can deal with jargons in specific field. The second idea is to understand the nature of COVID-19 pandemic economy that helps understand how to respond to climate change's series of pandemic. The third idea is to find a way to alleviate the incidents of ANEA among nursing home. The third idea is being chosen because the datasets are rich and there are several other datasets that can be merged.  
+There is evidence that elders relying on long-supporting services are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that COVID-19 pandemic holds key metrics to reveal some answers, the rating of supporting services proves to be misleading (Silver-greenberg and Gebeloff, 2021). The technological challenge is to find more appropriate approach that can support decision-makers who want to send elders to nursing homes. This is the purpose of project proposal.
 
-### CAPSTONE PROJECT IDEAS: <a id='capproideas'></a>
+Ensuring that the project proposal is deliverable, the discussion is in extent of a few key questions and problem identification. One of key questions is—for example—that one would like to know why the potential client might care about this problem and how it can be solved. The problem identification comprises seven sections, as follow: problem statement formation, context, criteria for success, constraints, stakeholders, scope of solution space, and data sources. When this identification is established, the discussion about a few key questions will be next.
 
-**[ ]** Automatic caption is unable to deal with specific terminology, which needs to be addressed. Sound classification algorithms can be useful to determine what topics they talk about. When being identified, the automatic caption can detect what kind of jargons they might use and incorporate them. This dataset is not available. But it can be created through web scraping. The data collection needs to be included.
 
-- Primary key
-- Published date
-- Video title
-- Author
-- Time interval
-- Website address
-- Location
-- Disciplinary Field
-- Signal Processing
-- Transcriptions produced by humans
+### PROBLEM STATEMENT <a id='problem statement'></a>
 
-**[ ]** Given that a poor response to COVID-19 pandemic has a deeper implication on economic level, the Census Bureau’s data collection focusing on households affected by that pandemic can offer essential insights. For example, 20.8 million household renters were rental cost-burdened, which referred to at least 30% of their income going straight to rent. My objective as a data scientist is to expand more insights in this analysis.
+Given that nursing home industry in western region relies on trust of consumers as a public good, what is a cheaper method to identify the percentage of rating system inconsistent with quality of nursing services and what is an alternative measurement 10% more accurate than rating system as a baseline before August 1, 2021.
 
-- [Overview](https://www.census.gov/programs-surveys/household-pulse-survey.html)
-- [Datasets](https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html)
-- [Data](https://www.census.gov/programs-surveys/household-pulse-survey/data.html)
-- [Demo](https://www.census.gov/data-tools/demo/hhp/)
-- [Census Public Use](https://datacatalog.urban.org/dataset/census-pulse-public-use-files-questionnaire-two)
+## CONTEXT <a id='context'></a>
 
-**[X]** The vulnerable adults are at risk for being subject to abuse, neglect, exploitation, and abuse (ANEA). There are several cases occurring in nursing homes. The rating is unable to determine if ANEA occurs in these homes. But fortunately, the nursing homes are required to submit detailed payroll information plus files accounting for employee and contract hours. Perhaps, this investigation can offer some actionable insights to address this problem. There are key information plus datasets available below:
+## CRITERIA FOR SUCCESS <a id='criteria'></a>
+
+## CONSTRAINTS <a id = 'constraints'></a>
+
+## STAKEHOLDERS <a id = 'stakeholders'></a>
+
+## SCOPE OF SOLUTION SPACE <a id = 'scope'></a>
+
+## DATA SOURCES <a id = 'sources'></a>
 
 - [Quality Assessment](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/Staffing-Data-Submission-PBJ)
-- [Data](https://data.cms.gov/browse?q=daily+nurse+staffing)
+- [Payment Data](https://data.cms.gov/browse?q=daily+nurse+staffing)
+- [MDS Quality Measures Data](https://data.cms.gov/provider-data/dataset/djen-97ju)
 - [Documentation](https://data.cms.gov/Special-Programs-Initiatives-Long-Term-Care-Facili/PBJ-Public-Use-Files-Data-Documentation/ygny-gzks)
+
+## REFERENCES
+
+Hawes C. Elder Abuse in Residential Long-Term Care Settings: What Is Known and What Information Is Needed? In: National Research Council (US) Panel to Review Risk and Prevalence of Elder Abuse and Neglect; Bonnie RJ, Wallace RB, editors. Elder Mistreatment: Abuse, Neglect, and Exploitation in an Aging America. Washington (DC): National Academies Press (US); 2003. 14.
+
+Silver-greenberg, Jessica, and Robert Gebeloff. “Maggots, Rape and Yet Five Stars: How U.S. Ratings of Nursing Homes Mislead the Public.” How U.S. Ratings of Nursing Homes Mislead the Public, The New York Times, 13 Mar. 2021.
+
