@@ -7,13 +7,13 @@
 **[Overview](#overview)** | **[Problem Statement](#problem)** | **[Context](#context)** | **[Criteria for Success](#criteria)** | **[Scope of Solution Space](#scope)** | **[Constraints](#constraints)** | **[Potential Stakeholders](#stakeholders)** | **[Data Sources](#sources)**
 
 
-### OVERVIEW <a id='overview'></a>
+## OVERVIEW <a id='overview'></a>
 
 There is clear evidence that the nursing home residents are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that the COVID-19 pandemic holds the key metrics to reveal some answers, the rating of nursing-home services proves to be misleading. The technological challenge is to find more appropriate approaches supporting the decision-makers who want to send elders to nursing homes. This is the purpose of my project proposal.
 
 Ensuring that my project proposal is deliverable, the discussion is in extent of  problem identification. The problem identification comprises seven sections, as follow: problem statement formation, context, criteria for success, constraints, stakeholders, scope of solution space, and data sources. When the identification component is established, the discussion about a few key questions will be next.
 
-### PROBLEM STATEMENT <a id='problem'></a>
+## PROBLEM STATEMENT <a id='problem'></a>
 
 Given that the nursing home industry in the western region relies on the trust of consumers as a public good, how can the percentage of rating system inconsistent with quality of nursing services be identified as a baseline that may be in use to evaluate the rating system? What is an alternative measurement that its accuracy is 10% higher than this baseline before this metric system is readily available on August 1, 2021?
 
