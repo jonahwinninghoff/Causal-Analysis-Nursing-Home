@@ -11,7 +11,7 @@
 
 There is clear evidence that the nursing home residents are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that the COVID-19 pandemic holds the key metrics to reveal some answers, the rating of nursing-home services proves to be misleading. The technological challenge is to find more appropriate approaches supporting the decision-makers who want to send elders to nursing homes. This is the purpose of my project proposal.
 
-Ensuring that my project proposal is deliverable, the discussion is in extent of  problem identification. The problem identification comprises seven sections, as follow: problem statement formation, context, criteria for success, constraints, stakeholders, scope of solution space, and data sources. When the identification component is established, the discussion about a few key questions will be next.
+Ensuring that my project proposal is deliverable, the discussion is in extent of  problem identification. The problem identification comprises seven sections, as follow: problem statement formation, context, criteria for success, constraints, stakeholders, scope of solution space, and data sources.
 
 ## PROBLEM STATEMENT <a id='problem'></a>
 
