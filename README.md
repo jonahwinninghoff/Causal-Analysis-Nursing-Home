@@ -65,4 +65,4 @@ The data analytics focuses on three different objectives, as follow: identifying
 
 ## REFERENCES <a id = "reference"></a>
 
-Silver-greenberg, Jessica, and Robert Gebeloff. “Maggots, Rape and Yet Five Stars: How U.S. Ratings of Nursing Homes Mislead the Public.” How U.S. Ratings of Nursing Homes Mislead the Public, The New York Times, 13 Mar. 2021. <a id = 'silver-greenberg'></a>
+[Silver-greenberg, Jessica, and Robert Gebeloff. “Maggots, Rape and Yet Five Stars: How U.S. Ratings of Nursing Homes Mislead the Public.” How U.S. Ratings of Nursing Homes Mislead the Public, The New York Times, 13 Mar. 2021.](https://www.nytimes.com/2021/03/13/business/nursing-homes-ratings-medicare-covid.html) <a id = 'silver-greenberg'></a>
