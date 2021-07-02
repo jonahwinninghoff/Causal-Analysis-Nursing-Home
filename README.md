@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Problem Statement](#problem)** | **[Context](#context)** | **[Criteria for Success](#criteria)** | **[Scope of Solution Space](#scope)** | **[Constraints](#constraints)** | **[Potential Stakeholders](#stakeholders)** | **[Data Sources](#sources)**
+**[Overview](#overview)** | **[Data Sources](#sources)**
 
 
 ## OVERVIEW <a id='overview'></a>
