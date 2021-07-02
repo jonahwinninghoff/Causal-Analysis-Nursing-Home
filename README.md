@@ -12,8 +12,3 @@
 There is clear evidence that the nursing home residents are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that the COVID-19 pandemic holds the key metrics to reveal some answers, the rating of nursing-home services proves to be misleading. The technological challenge is to find more appropriate approaches supporting the decision-makers who want to send elders to nursing homes. This is the purpose of the data science project.
 
 More information about the purpose of this research can be found in documentation.
-
-## DATA SOURCES <a id = 'sources'></a>
-
-- [Quality Assessment](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/Staffing-Data-Submission-PBJ)
-- [Documentation](https://data.cms.gov/Special-Programs-Initiatives-Long-Term-Care-Facili/PBJ-Public-Use-Files-Data-Documentation/ygny-gzks)
