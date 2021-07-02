@@ -16,7 +16,4 @@ More information about the purpose of this research can be found in documentatio
 ## DATA SOURCES <a id = 'sources'></a>
 
 - [Quality Assessment](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/Staffing-Data-Submission-PBJ)
-- [Payment Data](https://data.cms.gov/browse?q=daily+nurse+staffing)
-- [MDS Quality Measures Data](https://data.cms.gov/provider-data/dataset/djen-97ju)
-- [Penalties Data](https://data.cms.gov/provider-data/dataset/g6vv-u9sr)
 - [Documentation](https://data.cms.gov/Special-Programs-Initiatives-Long-Term-Care-Facili/PBJ-Public-Use-Files-Data-Documentation/ygny-gzks)
