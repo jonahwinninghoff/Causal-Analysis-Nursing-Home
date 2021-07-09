@@ -15,29 +15,22 @@ There is clear evidence that the nursing home residents are particularly vulnera
 
 <table>
 	<tr>
-		<th>Month</th>
-		<th>Savings</th>
-		<th>Spending</th>
+		<th>Model</th>
+		<th>Parameters</th>
+		<th>Accuracy</th>
+		<th>Precision</th>
+		<th>Recall</th>
+		<th>Specificity</th>
  	</tr>
  	<tr>
-  		<td>January</td>
-   		<td>$100</td>
-		<td>$900</td>
+  		<td>Logistic Regression</td>
+   		<td>Target: Binary Score, Independent: TFIDVectorizer </td>
+		<td>unknown</td>
+		<td>unknown</td>
+		<td>unknown</td>
+		<td>unknown</td>
  	</tr>
 	<tr>
-  		<td>July</td>
-   		<td>$750</td>
-		<td>$1000</td>
- 	</tr>
-	<tr>
-  		<td>December</td>
-   		<td>$250</td>
-		<td>$300</td>
- 	</tr>
-	<tr>
-  		<td>April</td>
-   		<td>$400</td>
-		<td>$700</td>
- 	</tr>
+
 </table>
 			
