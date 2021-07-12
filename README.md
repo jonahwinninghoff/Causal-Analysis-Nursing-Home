@@ -24,10 +24,10 @@ There is clear evidence that the nursing home residents are particularly vulnera
   		<td>Logistic Regression</td>
    		<td>Target: Binary Score, Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.25, min_df = 5) </td>
 		<tr>
-			<b>Accuracy: </b>67.9%
-			<b>Precision: </b>31.9%
-			<b>Mean Absolute Error: </b>0.321
-			<b>Brier Score: </b>0.321
+			- <b>Accuracy: </b>67.9%
+			- <b>Precision: </b>31.9%
+			- <b>Mean Absolute Error: </b>0.321
+			- <b>Brier Score: </b>0.321
 		<tr>
 		<td>Brier Score needs to be below 0.25</td>
  	</tr>
@@ -35,10 +35,10 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<td>Logistic Regression</td>
 		<td>Target: Binary Score, Independent: TFIDVectorizer(stop_words='english')</td>
 		<tr>
-			<b>Accuracy: </b>67.9%
-			<b>Precision: </b>31.9%
-			<b>Mean Absolute Error: </b>0.321
-			<b>Brier Score: </b>0.321
+			- <b>Accuracy: </b>67.9%
+			- <b>Precision: </b>31.9%
+			- <b>Mean Absolute Error: </b>0.321
+			- <b>Brier Score: </b>0.321
 		<tr>
 		<td>Given that the result is identical, the logistic regression model is not working.</td>
 	</tr>
