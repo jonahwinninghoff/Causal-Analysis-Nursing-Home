@@ -31,6 +31,12 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<td>0.321</td>
  	</tr>
 	<tr>
-
+		<td>Logistic Regression</td>
+		<td>Target: Binary Score, Independent: TFIDVectorizer(stop_words='english')</td>
+		<td>67.9%</td>
+		<td>31.9%</td>
+		<td>0.321</td>
+		<td>0.321</td>
+	</tr>
 </table>
 			
