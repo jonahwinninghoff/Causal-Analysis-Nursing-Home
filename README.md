@@ -18,7 +18,6 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<th>Model</th>
 		<th>Parameters</th>
 		<th>Metrics</th>
-		<th>Comment</th>
  	</tr>
  	<tr>
   		<td>Logistic Regression</td>
