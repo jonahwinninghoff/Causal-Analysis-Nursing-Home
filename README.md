@@ -21,6 +21,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<th>Precision</th>
 		<th>Mean Absolute Error</th>
 		<th>Brier Score</th>
+		<th>Comment</th>
  	</tr>
  	<tr>
   		<td>Logistic Regression</td>
@@ -29,6 +30,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<td>31.9%</td>
 		<td>0.321</td>
 		<td>0.321</td>
+		<td>Brier Score needs to be below 0.25</td>
  	</tr>
 	<tr>
 		<td>Logistic Regression</td>
@@ -37,6 +39,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<td>31.9%</td>
 		<td>0.321</td>
 		<td>0.321</td>
+		<td>Given that the result is identical, the logistic regression model is not working.</td>
 	</tr>
 </table>
 			
