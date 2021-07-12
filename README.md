@@ -24,10 +24,12 @@ There is clear evidence that the nursing home residents are particularly vulnera
   		<td>Logistic Regression</td>
    		<td>Target: Binary Score, Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.25, min_df = 5) </td>
 		<td>
-			- <b>Accuracy: </b>67.9%
-			- <b>Precision: </b>31.9%
-			- <b>Mean Absolute Error: </b>0.321
-			- <b>Brier Score: </b>0.321
+			<ul>
+				<li><b>Accuracy: </b>67.9%</li>
+				<li><b>Precision: </b>31.9%</li>
+				<li><b>Mean Absolute Error: </b>0.321</li>
+				<li><b>Brier Score: </b>0.321</li>
+			</ul>
 		</td>
 		<td>Brier Score needs to be below 0.25</td>
  	</tr>
