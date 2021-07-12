@@ -11,7 +11,7 @@
 
 There is clear evidence that the nursing home residents are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that the COVID-19 pandemic holds the key metrics to reveal some answers, the rating of nursing-home services proves to be misleading. The technological challenge is to find more appropriate approaches supporting the decision-makers who want to send elders to nursing homes. This is the purpose of the data science project.
 
-# Table of Models <a id='models'></a>
+# Table of Models with 10-fold Average Scores <a id='models'></a>
 
 <table>
 	<tr>
@@ -24,7 +24,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
  	</tr>
  	<tr>
   		<td>Logistic Regression</td>
-   		<td>Target: Binary Score, Independent: TFIDVectorizer </td>
+   		<td>Target: Binary Score, Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.25, min_df = 5) </td>
 		<td>67.9%</td>
 		<td>31.9%</td>
 		<td>0.321</td>
