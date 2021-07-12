@@ -43,5 +43,16 @@ There is clear evidence that the nursing home residents are particularly vulnera
 			</ul>
 		</td>
 	</tr>
+	<tr>
+		<td>Linear Regression</td>
+		<td>Target: Continuous Score, Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.25, min_df = 5) </td>
+		<td>
+			<ul>
+				<li><b>Accuracy: </b>>1%</li>
+				<li><b>Mean Absolute Error: </b>0.327</li>
+				<li><b>Brier Score: </b>0.135</li>
+			</ul>
+		</td>
+	</tr>
 </table>
 			
