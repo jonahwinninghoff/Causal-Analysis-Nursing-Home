@@ -38,10 +38,16 @@ There is clear evidence that the nursing home residents are particularly vulnera
 	<tr>
 		<td>Logistic Regression</td>
 		<td>Target: Binary Score, Independent: TFIDVectorizer(stop_words='english')</td>
-		<td>67.9%</td>
-		<td>31.9%</td>
-		<td>0.321</td>
-		<td>0.321</td>
+		<tr>
+			<th>Accuracy</th>
+			<th>Precision</th>
+			<th>Mean Absolute Error</th>
+			<th>Brier Score</th>
+			<td>67.9%</td>
+			<td>31.9%</td>
+			<td>0.321</td>
+			<td>0.321</td>
+		<tr>
 		<td>Given that the result is identical, the logistic regression model is not working.</td>
 	</tr>
 </table>
