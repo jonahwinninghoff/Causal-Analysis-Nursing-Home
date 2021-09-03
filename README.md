@@ -11,7 +11,7 @@
 
 There is clear evidence that the nursing home residents are particularly vulnerable to abandonment, neglect, exploitation, and abuse. Given that the COVID-19 pandemic holds the key metrics to reveal some answers, the rating of nursing-home services proves to be misleading. The technological challenge is to find more appropriate approaches supporting the decision-makers who want to send elders to nursing homes. This is the purpose of the data science project.
 
-# Table of Models with 10-fold Average Scores <a id='models'></a>
+# Table of Tested Models <a id='models'></a>
 
 <table>
 	<tr>
@@ -51,7 +51,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.8, min_df = 2)</td>
 		<td>
 			<ul>
-				<li><b>criterion: </b>MSE</li>
+				<li><b>Criterion: </b>MSE</li>
 				<li><b>Number of Trees: </b>100</li>
 				<li><b>Minimum Samples Split: </b>2</li>
 				<li><b>Maximum Features: </b>5</li>
@@ -71,7 +71,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: Cosine Similarities - Mean, Median, Maximum, Minimum, and Standard Deviation</td>
 		<td>
 			<ul>
-				<li><b>criterion: </b>MSE</li>
+				<li><b>Criterion: </b>MSE</li>
 				<li><b>Number of Trees: </b>100</li>
 				<li><b>Minimum Samples Split: </b>2</li>
 				<li><b>Maximum Features: </b>5</li>
@@ -128,4 +128,5 @@ There is clear evidence that the nursing home residents are particularly vulnera
 		</td>
 	</tr>
 </table>
-			
+
+
