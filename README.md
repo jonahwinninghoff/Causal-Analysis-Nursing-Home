@@ -144,8 +144,8 @@ There is clear evidence that the nursing home residents are particularly vulnera
 	</tr>
 	<tr>
 		<td>Light Gradient Boosting Model with Bayesian Optimization</td>
-		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: Independent: 18 principal components</td>
-</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0),Independent: 18 principal components
+		</td>
 		<td>
 			<ul>
 				<li><b>Lambda Lasso: </b>0.15</li>
