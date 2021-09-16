@@ -35,7 +35,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
  	</tr>
 	<tr>
 		<td>Linear Regression: OLS</td>
-		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: Cosine Similarities - Mean, Median, Maximum, Minimum, and Standard Deviation</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: 18 principal components</td>
 		<td></td>
 		<td>
 			<ul>
@@ -43,6 +43,42 @@ There is clear evidence that the nursing home residents are particularly vulnera
 				<li><b>Adj R2: </b>69.28%</li>
 				<li><b>MAE: </b>0.1531</li>
 				<li><b>RMSE: </b>0.2036</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Lasso Regression with Bayesian Optimization</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.8, min_df = 2)</td>
+</td>
+		<td>
+			<ul>
+				<li><b>Lambda Lasso: </b>0.01</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li><b>R2: </b>74.64%</li>
+				<li><b>Adj R2: </b>74.63%</li>
+				<li><b>MAE: </b>0.1552</li>
+				<li><b>RMSE: </b>0.1849</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Lasso Regression with Bayesian Optimization</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: 18 principal components</td>
+</td>
+		<td>
+			<ul>
+				<li><b>Lambda Lasso: </b>0.01</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li><b>R2: </b>79.26%</li>
+				<li><b>Adj R2: </b>79.25%</li>
+				<li><b>MAE: </b>0.1329</li>
+				<li><b>RMSE: </b>0.1673</li>
 			</ul>
 		</td>
 	</tr>
@@ -68,7 +104,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 	</tr>
 	<tr>
 		<td>Random Forest Regression</td>
-		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: Cosine Similarities - Mean, Median, Maximum, Minimum, and Standard Deviation</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: 18 principal components</td>
 		<td>
 			<ul>
 				<li><b>Criterion: </b>MSE</li>
@@ -108,7 +144,8 @@ There is clear evidence that the nursing home residents are particularly vulnera
 	</tr>
 	<tr>
 		<td>Light Gradient Boosting Model with Bayesian Optimization</td>
-		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: Cosine Similarities - Mean, Median, Maximum, Minimum, and Standard Deviation</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: Independent: 18 principal components</td>
+</td>
 		<td>
 			<ul>
 				<li><b>Lambda Lasso: </b>0.15</li>
