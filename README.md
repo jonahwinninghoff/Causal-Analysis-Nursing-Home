@@ -48,8 +48,8 @@ There is clear evidence that the nursing home residents are particularly vulnera
 	</tr>
 	<tr>
 		<td>Lasso Regression with Bayesian Optimization</td>
-		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.8, min_df = 2)</td>
-</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: TFIDVectorizer(stop_words = 'english', max_df = 0.8, min_df = 2)
+		</td>
 		<td>
 			<ul>
 				<li><b>Lambda Lasso: </b>0.01</li>
@@ -66,8 +66,8 @@ There is clear evidence that the nursing home residents are particularly vulnera
 	</tr>
 	<tr>
 		<td>Lasso Regression with Bayesian Optimization</td>
-		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), 		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: 18 principal components</td>
-</td>
+		<td>Continuous Target: Home Nurse Rating 100%-0% (1-0), Independent: 18 principal components
+		</td>
 		<td>
 			<ul>
 				<li><b>Lambda Lasso: </b>0.01</li>
