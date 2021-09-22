@@ -57,6 +57,8 @@ $\vspace{0.05cm}$
 
 \noindent Choosing this measure description may be perplexing since the zip codes are more useful to predict without requiring any types of monitoring. The simple regression shows that the r-squared score using zip codes as a single variable is 20.9%. In other words, this regressor explains at least 20% of the variance for target variable. The problem with this approach is that this regressor is a *proxy* for race. Modeling the prediction using features correlating to protected classes is a form of indirect discrimination, which is known to be proxy discrimination. If implementing the algorithm, the disparate impact may be occurring (Datta et al., 2017). For example, the nursing home located in a certain zip code may be penalized by this algorithm even if this institution provides high quality of services. This algorithm does not address this moral hazard problem. 
 
+$\vspace{0.05cm}$
+
 \noindent This is the reason why the measure description might be a better choice for predictive modeling. To determine if the text could help predict this target variable, the NLP techniques are in use to undertake assessment on the text. Each text is vectorized using term frequency-inverse document frequency (TF-IDF), rather than traditional bag-of-words. As a result, there are 49 regressors with target variable. Under the normal circumstance, the number of columns is much higher. The dataset is relatively thinner because every text in measure description is already standard. 
 
 $\vspace{0.05cm}$
@@ -260,8 +262,6 @@ ggplot(data = df, aes(x = value, fill=type, color=type)) +
 $\vspace{0.05cm}$
 
 \noindent However, this result is skeptical, so the ECDF is created to compare the actual value with predicted value produced by the RFR model. As indicated by the density-based plot, the distribution shape of predicted values is different from that of actual values. The plot may suggest that either at least one regressor or this model is discrete. When the simulated data tests against this model, the predicted values turn into uniform distribution. In other words, the values in regressors are not various enough to predict continuous values. This analysis also concludes that the irreducible error exists due to a lack of various values in regressors. This error is reducible if undertaking data wrangling. For example, there is the algorithm that can identify potential linkages between this dataset and another dataset from the outside to determine if both datasets are joinable. 
-
-$\vspace{0.05cm}$
 
 \noindent Besides this, the interesting part in this analysis is that the RFR models with and without PCA do not behave the same way even if both r-squared and adjusted r-squared scores are identical. The F-distribution is in use to test the null hypothesis of two models that both variances are not different from each other at the significance level. The finding is that null hypothesis is rejected at the alpha level equal to 1%. But the F-distribution shows that there is no significant difference between the variances of OLS models with and without PCA.
 
