@@ -13,7 +13,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 
 # List to Do <a id = 'listtodo'></a>
 
-[...] Data Wrangling
+[X] Data Wrangling
 
 [ ] Exploratory Data Analysis
 
