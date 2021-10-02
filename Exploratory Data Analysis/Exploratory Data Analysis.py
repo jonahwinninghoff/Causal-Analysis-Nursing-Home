@@ -56,22 +56,28 @@ clean_quality = pd.read_csv(qfile, encoding='cp1252').rename(columns =
 file.close()
 
 
+# In[3]:
+
+
+len(clean_quality)
+
+
 # ### Heatmap: Measure Code <a id='relationAS'></a>
 
-# In[3]:
+# In[4]:
 
 
 n = len(clean_quality.columns)
 clean_quality = pd.get_dummies(clean_quality,columns=['Measure Code'])
 
 
-# In[4]:
+# In[5]:
 
 
 print(clean_quality['Measure Description'].unique())
 
 
-# In[5]:
+# In[6]:
 
 
 replace = ['activities',
@@ -94,14 +100,14 @@ replace = ['activities',
            'physically restrained']
 
 
-# In[6]:
+# In[7]:
 
 
 for i in enumerate(clean_quality.iloc[:,n-1:].columns):
     clean_quality = clean_quality.rename(columns={i[1]:replace[i[0]]})
 
 
-# In[7]:
+# In[8]:
 
 
 # Combine short and long. Long and short are not needed when we have resident type
@@ -113,14 +119,14 @@ clean_quality = clean_quality.drop(['short antipsychotic','long antipsychotic','
               'long pneumococcal vaccine'], axis = 1)
 
 
-# In[8]:
+# In[9]:
 
 
 # All is good.
 display(clean_quality.iloc[:,n-1:].describe())
 
 
-# In[9]:
+# In[10]:
 
 
 plt.figure(figsize=(10,7))
@@ -128,7 +134,7 @@ sns.heatmap(clean_quality.iloc[:,n:].corr())
 plt.show()
 
 
-# In[10]:
+# In[11]:
 
 
 # Measure Description and Measure Code are not necessary
@@ -137,7 +143,7 @@ clean_quality = clean_quality.drop('Measure Description',axis=1)
 
 # ### Empirical Cumulative Distribution Function <a id='ecdf'></a>
 
-# In[11]:
+# In[12]:
 
 
 # Write the ECDF function
@@ -148,7 +154,7 @@ def ecdf(data):
     return x, y
 
 
-# In[12]:
+# In[13]:
 
 
 # ECDF all Four Quarter Average Score and Q1-Q4 Score
@@ -171,7 +177,7 @@ xq, yq = ecdf(clean_quality ['score']/100)
 # 
 # --------------
 
-# In[13]:
+# In[14]:
 
 
 ## Create function to calculate alpha and beta
@@ -192,7 +198,7 @@ def beta(data):
     return beta
 
 
-# In[14]:
+# In[15]:
 
 
 # Set random seed
@@ -203,7 +209,7 @@ xq_theo, yq_theo = ecdf(np.random.beta(alpha(clean_quality['score']/100),
                beta(clean_quality['score']/100),size=100000))
 
 
-# In[15]:
+# In[16]:
 
 
 plt.style.use('fivethirtyeight')
@@ -221,7 +227,7 @@ plt.show()
 
 # ### Permutation Test <a id='hypothesis'></a>
 
-# In[16]:
+# In[17]:
 
 
 def permutation_test(data, target_column = 'score', separate_by = 'column', separate_value = 0, size = 10000):
@@ -241,7 +247,7 @@ def permutation_test(data, target_column = 'score', separate_by = 'column', sepa
     return pvalue
 
 
-# In[17]:
+# In[18]:
 
 
 # Focus on Relationship between Four Quarter Average Score and Measure Codes
@@ -262,7 +268,7 @@ display(pd.DataFrame({'Variable':labels,'Counter':counters,'p_value':p_values}))
 
 # ### States PCA <a id='pca'></a>
 
-# In[18]:
+# In[19]:
 
 
 # Binarize categorical datatype
@@ -276,7 +282,7 @@ clean_quality = pd.concat([clean_quality.drop('Resident type', axis = 1),
 clean_quality = clean_quality.rename(columns = {'Y':'Used in Quality Meaure Five Star Rating'})
 
 
-# In[19]:
+# In[20]:
 
 
 # Select the columns for state summary
@@ -285,7 +291,7 @@ n.extend(list(range(7,len(clean_quality.columns))))
 state_summary = clean_quality.iloc[:,n]
 
 
-# In[20]:
+# In[21]:
 
 
 # Transform data and store score in another object
@@ -294,14 +300,14 @@ score = df.score/100
 df = df.drop('score',axis=1)
 
 
-# In[21]:
+# In[22]:
 
 
 # PCA fit transform
 pca = PCA().fit(df)
 
 
-# In[22]:
+# In[23]:
 
 
 plt.subplots(figsize=(10, 6))
@@ -313,13 +319,13 @@ plt.title('Cumulative Variance')
 plt.show()
 
 
-# In[23]:
+# In[24]:
 
 
 pca_df = pd.DataFrame(pca.transform(df), index = list(df.index))
 
 
-# In[24]:
+# In[25]:
 
 
 # Change from 0 - 15 to pc_1 to pc_16
@@ -329,14 +335,14 @@ for i in pca_df.columns:
 pca_df.columns = thelist
 
 
-# In[25]:
+# In[26]:
 
 
 pca_df = pd.concat([score,pca_df],axis=1)
 pca_df['score'] = pca_df['score']*3000
 
 
-# In[26]:
+# In[27]:
 
 
 x = pca_df.pc_1
@@ -359,7 +365,7 @@ plt.show()
 
 # ### Download and Analyze the Provider Information Dataset <a id = 'down'></a>
 
-# In[27]:
+# In[28]:
 
 
 # Unzip and read cleaned dataset
@@ -370,7 +376,13 @@ information = pd.read_csv(qfile, encoding='cp1252').drop('Unnamed: 0',axis=1)
 file.close()
 
 
-# In[28]:
+# In[29]:
+
+
+len(information)
+
+
+# In[30]:
 
 
 msno.matrix(information, labels = True)
@@ -379,7 +391,7 @@ plt.show()
 
 # As indicated by the matrix, this is possible that missing columns are at same rows.
 
-# In[29]:
+# In[31]:
 
 
 msno.heatmap(information)
@@ -388,7 +400,7 @@ plt.show()
 
 # As indicated by heatmap, it confirms my suspicion. 
 
-# In[30]:
+# In[32]:
 
 
 msno.dendrogram(information)
@@ -397,7 +409,7 @@ plt.show()
 
 # The dendrogram shows that the distance is between many columns so close. This means that the NaN appears several columns on each row.
 
-# In[31]:
+# In[33]:
 
 
 # What if removing NaN in each row?
@@ -407,14 +419,14 @@ plt.bar(['removing NaN','not removing NaN'],[len(guinea_pig),len(information)])
 plt.show()
 
 
-# In[32]:
+# In[34]:
 
 
 # Now removing NaN
 information = information[~information.isnull().values.any(axis=1)]
 
 
-# In[33]:
+# In[35]:
 
 
 print('The number of missings is:',information.isnull().any(axis = 1).sum())
@@ -422,7 +434,7 @@ print('The number of missings is:',information.isnull().any(axis = 1).sum())
 
 # ### Automation to Convert Dtypes <a id = 'dtypes'></a>
 
-# In[34]:
+# In[36]:
 
 
 # Create automation to identify types that should be categorical
@@ -434,7 +446,7 @@ def multi_categorical(data, threshold):
     return guinea_pig
 
 
-# In[35]:
+# In[37]:
 
 
 guinea_pig = information.copy()
@@ -443,7 +455,7 @@ for i in range(0,53):
     thelist.append(len(multi_categorical(guinea_pig, i).select_dtypes(include = 'category').columns))
 
 
-# In[36]:
+# In[38]:
 
 
 plt.figure(figsize=(15,7))
@@ -454,27 +466,27 @@ plt.axvline(13,linestyle=':',color='black')
 plt.show()
 
 
-# In[37]:
+# In[39]:
 
 
 # Select 6 as a threshold for labelling categories
 information = multi_categorical(information, 14)
 
 
-# In[38]:
+# In[40]:
 
 
 display(information.select_dtypes(include = 'category').head())
 
 
-# In[39]:
+# In[41]:
 
 
 # Too many uniques
 print(information['Ownership Type'].unique())
 
 
-# In[40]:
+# In[42]:
 
 
 # Reduce the number of uniques by for profit, non profit, and gov't
@@ -483,7 +495,7 @@ information['Ownership Type'] = information['Ownership Type'].apply(lambda x: 'f
                                         in x else x)))
 
 
-# In[41]:
+# In[43]:
 
 
 print(information['Ownership Type'].unique())
@@ -491,7 +503,7 @@ print(information['Ownership Type'].unique())
 
 # ### Heatmap: Numeric Variables <a id = 'heatmap'></a>
 
-# In[42]:
+# In[44]:
 
 
 # Get dummies
@@ -514,27 +526,27 @@ def multi_get_dummies(data):
     return data
 
 
-# In[43]:
+# In[45]:
 
 
 # Get multi dummies
 information = multi_get_dummies(information)
 
 
-# In[44]:
+# In[46]:
 
 
 print(information.select_dtypes(include = ['float','integer']).shape)
 
 
-# In[45]:
+# In[47]:
 
 
 # Identify the perfectly correlation
 correlated = pd.DataFrame(information.corr().unstack().sort_values())
 
 
-# In[46]:
+# In[48]:
 
 
 # Drop all pair of identical variables being correlated
@@ -542,26 +554,32 @@ correlated.drop(correlated.tail(len(information.select_dtypes(include = ['float'
         inplace=True)
 
 
-# In[47]:
+# In[49]:
 
 
 # Limit correlated variables that are higher than 0.8 or lower than -0.8
 correlated = correlated[(correlated > 0.8) | (correlated < -0.8)]
 correlated = correlated[~correlated[0].isna()]
-correlated = correlated.unstack(level=-1)
+correlated1 = correlated.unstack(level=-1)
 
 
-# In[48]:
+# In[50]:
 
 
 plt.figure(figsize = (25,25))
-sns.heatmap(correlated,cmap='winter')
+sns.heatmap(correlated1,cmap='winter')
 plt.show()
+
+
+# In[51]:
+
+
+correlated.to_json('list_of_correlated')
 
 
 # ### State PCA <a id = 'pca1'></a>
 
-# In[49]:
+# In[52]:
 
 
 # Select only float and int but not zip code plus state
@@ -573,14 +591,14 @@ score = df['Overall Rating']/100
 df = df.drop('Overall Rating', axis = 1)
 
 
-# In[50]:
+# In[53]:
 
 
 # PCA fit transform
 pca = PCA().fit(df)
 
 
-# In[51]:
+# In[54]:
 
 
 plt.subplots(figsize=(10, 6))
@@ -592,7 +610,7 @@ plt.xticks(np.arange(0,50,step=2))
 plt.show()
 
 
-# In[52]:
+# In[55]:
 
 
 # Transform df into pca df
@@ -608,7 +626,7 @@ pca_df.columns = thelist
 pca_df['score'] = score*3000
 
 
-# In[53]:
+# In[56]:
 
 
 x = pca_df.pc_1
@@ -627,7 +645,7 @@ plt.show()
 
 # ### Uniform Distribution Testing <a id = 'edf1'></a>
 
-# In[54]:
+# In[57]:
 
 
 plt.hist(information['Overall Rating'],bins=20)
@@ -636,7 +654,7 @@ plt.xticks(np.arange(0,19,step=1))
 plt.show()
 
 
-# In[55]:
+# In[58]:
 
 
 # What if removing NaN in each row?
@@ -647,13 +665,13 @@ plt.bar(['removing 18','not removing 18'],[len(information[information['Overall 
 plt.show()
 
 
-# In[56]:
+# In[59]:
 
 
 information = information[information['Overall Rating'] != 18]
 
 
-# In[57]:
+# In[60]:
 
 
 plt.figure(figsize=(10,7))
@@ -663,7 +681,7 @@ plt.xticks(np.arange(0,6,step=1))
 plt.show()
 
 
-# In[58]:
+# In[61]:
 
 
 obs = list(Counter(information['Overall Rating']).values())
@@ -671,7 +689,7 @@ e = sum(obs)/len(obs)
 e = np.repeat(e,len(obs))
 
 
-# In[59]:
+# In[62]:
 
 
 print(stats.chisquare(f_obs = obs,f_exp = e, ddof = 1))
@@ -679,7 +697,7 @@ print(stats.chisquare(f_obs = obs,f_exp = e, ddof = 1))
 
 # As indicated by above, the difference between observed values and expected values of `Overall Rating` is significant at 0.05 alpha level. The expected distribution should be uniform but the hypothesis proves otherwise.
 
-# In[60]:
+# In[63]:
 
 
 information.to_csv('cleaned_information.csv')
