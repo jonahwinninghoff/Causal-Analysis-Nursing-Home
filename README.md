@@ -17,7 +17,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 
 [X] Exploratory Data Analysis
 
-[ ] Feature Engineering
+[X] Feature Engineering
 
 [ ] Modeling
 
