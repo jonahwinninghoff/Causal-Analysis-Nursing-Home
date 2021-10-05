@@ -19,7 +19,7 @@ There is clear evidence that the nursing home residents are particularly vulnera
 
 [X] Feature Engineering
 
-[ ] Modeling
+[X] Modeling
 
 [ ] Report
 
