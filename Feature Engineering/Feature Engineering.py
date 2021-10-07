@@ -426,7 +426,8 @@ for i in q.columns:
         eliminate.append(i)
 
 eliminate.extend(['Number of Citations from Infection Control Inspections',
-                  'Most Recent Health Inspection More Than 2 Years Ago'])
+                  'Most Recent Health Inspection More Than 2 Years Ago',
+                  'Total Weighted Health Survey Score'])
 q = q.drop(eliminate,axis=1)
 
 
