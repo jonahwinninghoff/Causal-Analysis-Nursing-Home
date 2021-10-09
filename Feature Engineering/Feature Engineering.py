@@ -434,11 +434,5 @@ q = q.drop(eliminate,axis=1)
 # In[34]:
 
 
-q = q.drop(['Abuse Icon'],axis=1)
-
-
-# In[35]:
-
-
 q.to_csv('for_prediction')
 
