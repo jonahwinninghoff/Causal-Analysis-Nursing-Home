@@ -640,16 +640,6 @@ print(result.wald_test(['Automatic Sprinkler Systems in All Required Areas: Yes'
 # In[54]:
 
 
-results = IV2SLS(y, X['Abuse Icon'], X['Automatic Sprinkler Systems in All Required Areas: Yes']).fit()
-
-thelist = ['H','pval','dof']
-for i in enumerate(results.spec_hausman()):
-    print(thelist[i[0]],i[1])
-
-
-# In[ ]:
-
-
 # Remove Abuse Icon
 y = df['Health Inspection Rating']
 X = sm.add_constant(df.drop(['Health Inspection Rating','Abuse Icon',
@@ -658,13 +648,13 @@ probit = sm.Probit(y, X)
 result = probit.fit(cov_type="hc0")
 
 
-# In[ ]:
+# In[55]:
 
 
 display(result.summary())
 
 
-# In[ ]:
+# In[56]:
 
 
 # Check 
@@ -676,14 +666,14 @@ for i in enumerate(names):
     print(i[1],test[i[0]])
 
 
-# In[ ]:
+# In[57]:
 
 
 table = pd.concat([pd.DataFrame(result.params).rename(columns = {0:'coef'}),result.conf_int()],axis=1).rename(
     columns = {0:0.025,1:0.975})
 
 
-# In[ ]:
+# In[58]:
 
 
 table.index = ['intercept', 'National Area regional code', 'Number of Certified Beds',
@@ -694,37 +684,31 @@ table.index = ['intercept', 'National Area regional code', 'Number of Certified 
                'Adjusted Hours per Resident per Day','LPN', 'Nurse Aide', 'RN']
 
 
-# In[ ]:
+# In[59]:
 
 
 table.to_csv('actionable')
 
 
-# In[ ]:
-
-
-X = X.drop(['Automatic Sprinkler Systems in All Required Areas: Yes','Abuse Icon'],axis=1)
-
-
-# In[ ]:
+# In[62]:
 
 
 X.columns = ['cons','zip','bed','repor','compl','fine','fam','amou','hr','lpn','nur_aid','rn']
 
 
-# In[ ]:
+# In[63]:
 
 
 data = pd.concat([y,X],axis=1).rename(columns = {'Health Inspection Rating':'ins_rat'})
 
 
-# In[ ]:
+# In[64]:
 
 
 import statsmodels.formula.api as smf
 
 
-# In[ ]:
+# In[65]:
 
 
 formula = 'ins_rat ~ zip + bed + hr + repor + compl + fine + fam + amou + hr*nur_aid + hr*lpn + hr*rn'
@@ -732,19 +716,19 @@ result = smf.probit(formula = formula,data=data).fit()
 result._get_robustcov_results("HC0")
 
 
-# In[ ]:
+# In[66]:
 
 
 display(result.summary())
 
 
-# In[ ]:
+# In[67]:
 
 
 print(result.wald_test(['hr:lpn','hr:rn','hr:nur_aid']))
 
 
-# In[ ]:
+# In[68]:
 
 
 formula = 'ins_rat ~ zip + bed + hr + repor + compl + fine + fam + amou + bed*fam'
@@ -752,13 +736,13 @@ result = smf.probit(formula = formula,data=data).fit()
 result._get_robustcov_results("HC0")
 
 
-# In[ ]:
+# In[69]:
 
 
 display(result.summary())
 
 
-# In[ ]:
+# In[70]:
 
 
 print(result.wald_test(['bed:fam']))
