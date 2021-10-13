@@ -74,16 +74,6 @@
 
 <p align = 'justify'>For this analysis, the causal model does not follow A1 and A4 assumptions. The endogenous variable (or target variable) is limited between 1 and 5 points that is also known to be Limited Dependent Variable (LDV). The popular solution is logarithmic transformation without Monte Carlo simulation is, unfortunately, incorrect. This particular model misspecification is called Duan's Smear.</p>
 
-<div align = 'center'><img src="https://latex.codecogs.com/svg.image?log(y_i)=x_i&space;\beta&space;&plus;&space;u_i" title="log(y_i)=x_i \beta + u_i" /></div>
-
-<div align = 'center'><img src="https://latex.codecogs.com/svg.image?e^{log(y_i)}=e^{x_i&space;\beta&space;&plus;&space;u_i}" title="e^{log(y_i)}=e^{x_i \beta + u_i}" /></div>
-
-<div align = 'center'><img src="https://latex.codecogs.com/svg.image?E\left&space;[&space;y_i&space;|&space;x_i&space;\right&space;]=e^{x_i&space;\beta}\int&space;&space;e^{u_i}&space;\partial&space;u_i" title="E\left [ y_i | x_i \right ]=e^{x_i \beta}\int e^{u_i} \partial u_i" /></div>
-
-<p align = 'justify'>This logarithmic transformation algebra demonstrates the mathematical issues with assumption that error term is independent of exogenous variable (or predictor). The logarithmic transformation may be in violation of A3 due to exogenity. This term refers to which the exogenous variable is correlated with error term.</p>
-
-<div align = 'center'><img src="https://latex.codecogs.com/svg.image?e^{x_i&space;\beta}&space;&plus;&space;u_i&space;\not\approx&space;e^{x_i&space;\hat\beta}&space;\frac{1}{n}\sum_{i=1}^n&space;e^{\hat&space;u_i}" title="e^{x_i \beta} + u_i \not\approx e^{x_i \hat\beta} \frac{1}{n}\sum_{i=1}^n e^{\hat u_i}" /></div>
-
 The solution is to use nonlinear least square called Probit with Quasi-Maximum Likelihood Estimation condition (QMLE). This model is more efficient to heteroskedasticity. The heteroskedasticity is the variance of residual term that is not constant through the regression. For example, the causla model is consistent and asymptotically normal where V is not proportional to A. The assumption for consistency is:
 
 <div align = 'center'><img src="https://latex.codecogs.com/svg.image?\sqrt{n}(\hat\theta_{QMLE}&space;-&space;\theta_0)\sim^a&space;N(0,A^{-1}VA^{-1})&space;" title="\sqrt{n}\hat\theta_{QMLE} - \theta_0)\sim^a N(0,A^{-1}VA^{-1}) " /></div>
