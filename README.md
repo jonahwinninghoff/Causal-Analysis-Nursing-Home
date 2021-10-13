@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)**
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -36,8 +36,16 @@
 
 ![image](https://user-images.githubusercontent.com/52142917/137058706-77dec24b-4136-4a86-a0a0-bb1a3c404959.png)
 
-<p align = 'justify'> The expected difference is by averaging scores tied with particular measure code and subtracting by these without this code. As indicated by the plot, the confidence interval is difficult to be seen due to small standard errors. The margins of errors are between 0.001 and 0.002. As the plot shown, the observed difference for catheter-related measure corde is lower than -40 while the observed difference for depressive-related measure code is higher than 60. Intuitively, the facilities are likely to perform poorly with treating residetns who have catheter inserted and left in their bladders while they do well with treating residents who have depressive symptoms. However, this plot is not established with causal relationship due to self-report bias.</p>
+<p align = 'justify'> The expected difference is by averaging scores tied with particular measure code and subtracting by these without this code. As indicated by the plot, the confidence interval is difficult to be seen due to small standard errors. The margins of errors are between 0.001 and 0.002. As the plot shown, the observed difference for catheter-related measure corde is lower than -40 while the observed difference for depressive-related measure code is higher than 60. Intuitively, the facilities are likely to perform poorly with treating residetns who have catheter inserted and left in their bladders while they do well with treating residents who have depressive symptoms. However, this plot is not established with causal relationship due to self-report bias (CMS, 2021).</p>
 
 ## DATA WRANGLING <a id ='wrangling'></a>
 
 <p align = 'justify'> As mentioned earlier, the <i> Provider Information </i> dataset has many features. The challenge with this dataset is that several features are redundant (some are perfectly correlated) and wrangling process requires automation techniques to identify redundancies and leakages. The leakage refers to which the features in the training process do not exist when integrating the production, in turn, causes the predictive scores to overestimate. This is common mistake in data science. For example, the total weighted health survey score as a feature predicts the health inspection rating is a form of leakage. The final process is to investigate if several leaked features are overlooked. As a result, there are 30 leaked features found in this dataset. As a result, the number of features is reduced to 37. </p>
+
+## PREDICTIVE MODELING <a id ='model'></a>
+
+<p align = 'justify'>The objective for predictive modeling is that a model should explain at least 80% of the variance for the target variable and it should be generalizable. Not only that, it should be well-calibrated. In order to determine if the criteria could be met, this dataset separates into three sets: training set, validation set, and testing set. The training set is in use for a model to learn while the validation set is in use for tuning hyperparameter. Finally, the testing set is unseen dataset. The feature and model selections are undertaken to maximize model performance. </p> 
+  
+<p align = 'justify'> But there are 36 features in total besides target variable. An attempt to select features manually is not possible since the total possible combinations are 68,719,476,736. Two automations are, for that specific reasons, in use in attempting to optimize a model, which are the least shrinkage and selection operator (lasso) and Bayes optimal feature selection.</p>
+
+The lasso regularization
