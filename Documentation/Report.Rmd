@@ -201,7 +201,7 @@ $\vspace{0.05cm}$
 
 $\vspace{0.05cm}$
 
-\noindent But unfortunately, when the Bayesian search theory is in use to optimize this algorithm, the R-squared score is 43.47% for validation set at maximum. This score is 41.92% for the testing set while the adjusted R-squared score is 41.62%. The mean absolute error (MAE) score is 0.77. This prediction model can explain less than a half variance for the target variable, which is well below the threshold. This model is not well calibrated, either. For example, if the model predicts that the health inspection rating is 3.5, the actual score may fall somewhere between 2.73 and 4.27. This error score indicates how large the error is by averaging the difference between predicted and actual values.
+\noindent But unfortunately, when the Bayesian search theory is in use to optimize this algorithm, the R-squared score is 43.47% for validation set at maximum. This score is 41.92% for the testing set while the adjusted R-squared score is 41.62%. The root mean square error (RMSE) score is 0.97. This prediction model can explain less than a half variance for the target variable, which is well below the threshold. This model is not well calibrated, either. For example, if the model predicts that the health inspection rating is 3.5, the actual score may fall somewhere between 2.53 and 4.47. This error score indicates how large the error is by averaging the difference between predicted and actual values.
 
 # **\textbf{Econometric Method}**
 
@@ -340,8 +340,6 @@ $\vspace{0.05cm}$
 
 "Technical Details." *Nursing homes including rehab services*, the Centers for Medicare and Medicaid Services, Sep. 2021. https://data.cms.gov/provider-data/topics/nursing-homes/technical-details#health-inspections
 
-Adams, Ryan P. "Practical Bayesian Optimization of Machine Learning Algorithms." School of Engineering and Applied Sciences Harvard University, 2012.
-
 Ahmed, S., Narasimhan, H., and Agarwal, S. "Bayes Optimal Feature for Supervised Learning with General Performance Measures." arXiv, 2015. http://auai.org/uai2015/proceedings/papers/72.pdf
 
 Boehmke, B. “Regularized Regression.” *UC Business Analytics R Programming Guide*, University of Cincinnati, 2021. http://uc-r.github.io/regularized_regression#lasso
@@ -363,6 +361,3 @@ Park, Y. and Ho JC. "PaloBoost." *An Overfitting-robust TreeBoost with Out-of-Ba
 Silver-Greenberg, Jessica, and Robert Gebeloff. “Maggots, Rape and Yet Five Stars: How U.S. Ratings of Nursing Homes Mislead the Public.” *How U.S. Ratings of Nursing Homes Mislead the Public*, New York Times, 13 Mar. 2021.
 
 Sinharay, S. "Coninuous Probability Distributions." *The International Encyclopedia of Education*, Elsevier Science, 2010. https://doi.org/10.1016/B978-0-08-044894-7.01720-6
-
-Streiner, David L. "Unicorns Do Exist: A Tutorial on "Proving" the Null Hypothesis." *Research Methods in Psychiatry*, The Canadian Journal of Psychiatry, Dec. 2003.
-
