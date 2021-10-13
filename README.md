@@ -83,3 +83,16 @@
 <p align = 'justify'>This logarithmic transformation algebra demonstrates the mathematical issues with assumption that error term is independent of exogenous variable (or predictor). The logarithmic transformation may be in violation of A3 due to exogenity. This term refers to which the exogenous variable is correlated with error term.</p>
 
 <div align = 'center'><img src="https://latex.codecogs.com/svg.image?e^{x_i&space;\beta}&space;&plus;&space;u_i&space;\not\approx&space;e^{x_i&space;\hat\beta}&space;\frac{1}{n}\sum_{i=1}^n&space;e^{\hat&space;u_i}" title="e^{x_i \beta} + u_i \not\approx e^{x_i \hat\beta} \frac{1}{n}\sum_{i=1}^n e^{\hat u_i}" /></div>
+
+The solution is to use nonlinear least square called Probit with Quasi-Maximum Likelihood Estimation condition (QMLE). This model is more efficient to heteroskedasticity. The heteroskedasticity is the variance of residual term that is not constant through the regression. For example, the causla model is consistent and asymptotically normal where V is not proportional to A. The assumption for consistency is:
+
+<div align = 'center'><img src="https://latex.codecogs.com/svg.image?\sqrt{n}\hat\theta_{QMLE}&space;-&space;\theta_0)\sim^a&space;N(0,A^{-1}VA^{-1})&space;" title="\sqrt{n}\hat\theta_{QMLE} - \theta_0)\sim^a N(0,A^{-1}VA^{-1}) " /></div>
+
+where
+
+<div align = 'center'><img src="https://latex.codecogs.com/svg.image?A&space;=&space;-&space;E\left&space;[&space;H(\omega_i,\theta_0)&space;\right&space;]" title="A = - E\left [ H(\omega_i,\theta_0) \right ]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://latex.codecogs.com/svg.image?V&space;=&space;E[&space;s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" title="V = E[ s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" /></div>
+
+
+
+
+
