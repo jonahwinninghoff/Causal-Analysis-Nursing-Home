@@ -60,7 +60,7 @@
 
 <p align = 'justify'> As a result, the best lambda for lasso is 0.005 and the R-squared score is 32.19% for the validation set while the R-squared score for Bayes optimal feature selection is 32.87%. However, the number of features in total for lasso is 16, which is lower than the Bayesian approach (equal to 21 features in total).</p>
 
-<p align = 'justify'>The best model is light gradient boosting, which is equal to 43.47% for validation set. This model is already optimized using Bayesian search theory. The R-squared score for testing set is 41.92%. The mean absolute error (MAE) score is 0.77. For example, if this model predicts that the health inspection rating is 3.5, the acutal score may fall somewhere between 2.73 and 4.27. The error scores indicate how large the error is by averaging the difference between predicted and acutal values.</p>
+<p align = 'justify'>The best model is light gradient boosting, which is equal to 43.47% for validation set. This model is already optimized using Bayesian search theory. The R-squared score for testing set is 41.92%. The root mean square error (RMSE) score is 0.97. For example, if this model predicts that the health inspection rating is 3.5, the acutal score may fall somewhere between 2.53 and 4.47. The error scores indicate how large the error is by averaging the difference between predicted and acutal values.</p>
 
 ## ECONOMETRIC METHOD <a id = 'econ'></a>
 
