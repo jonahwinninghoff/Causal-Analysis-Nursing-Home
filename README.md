@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)**
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -60,4 +60,26 @@
 
 <p align = 'justify'> As a result, the best lambda for lasso is 0.005 and the R-squared score is 32.19% for the validation set while the R-squared score for Bayes optimal feature selection is 32.87%. However, the number of features in total for lasso is 16, which is lower than this Bayesian approach (equal to 21 features in total).</p>
 
-<p align = 'justify'>The best model is the light gradient boosting, which equal to 43.47% for validation set. This model is already optimized using Bayesian search theory. The R-squared score for testing set is 41.92%. The mean absolute error (MAE) score is 0.77. In other words, this best model can explain less than a half variance for the target variable, which is not a desirable outcome. This model is not well-calibrated. For exampel if this model predicts that the health inspection rating is 3.5, the acutal score may fall somewhere between 2.73 and 4.27. This error scores indicates how large the error is by averaging the difference between predicted and acutal values.</p>
+<p align = 'justify'>The best model is the light gradient boosting, which equal to 43.47% for validation set. This model is already optimized using Bayesian search theory. The R-squared score for testing set is 41.92%. The mean absolute error (MAE) score is 0.77. For example, if this model predicts that the health inspection rating is 3.5, the acutal score may fall somewhere between 2.73 and 4.27. This error scores indicates how large the error is by averaging the difference between predicted and acutal values.</p>
+
+## ECONOMETRIC METHOD <a id = 'econ'></a>
+
+<p align = 'justify'> To the extent that the causal relationship fails to establish, the previous discussion indicates the limits of data science approach. Resolving these issues are by adopting the econometric approach. Some suggest that the minimal requirement for this approach is that the adjusted R-squared score must be positive. But in technical sense. this approach stipulates with model misspecification. More importantly, Gauss Markov assumptions are fundamental of the econometric approach, though the causal may depart from some assumptions, as the following: </p>
+
+- **A1:** linearity in parameters
+- **A2:** no perfect collinearity
+- **A3:** zero conditional mean error
+- **A4:** homoskedasticity and no serial correlation
+- **A5:** normality of the error
+
+<p align = 'justify'>For this analysis, the causal model does not follow A1 and A4 assumptions. The endogenous variable (or target variable) is limited between 1 and 5 points that is also known to be Limited Dependent Variable (LDV). The popular solution is logarithmic transformation without Monte Carlo simulation is, unfortunately, incorrect. This particular model misspecification is called Duan's Smear.</p>
+
+<div align = 'center'><img src="https://latex.codecogs.com/svg.image?log(y_i)=x_i&space;\beta&space;&plus;&space;u_i" title="log(y_i)=x_i \beta + u_i" /></div>
+
+<div align = 'center'><img src="https://latex.codecogs.com/svg.image?e^{log(y_i)}=e^{x_i&space;\beta&space;&plus;&space;u_i}" title="e^{log(y_i)}=e^{x_i \beta + u_i}" /></div>
+
+<div align = 'center'><img src="https://latex.codecogs.com/svg.image?E\left&space;[&space;y_i&space;|&space;x_i&space;\right&space;]=e^{x_i&space;\beta}\int&space;&space;e^{u_i}&space;\partial&space;u_i" title="E\left [ y_i | x_i \right ]=e^{x_i \beta}\int e^{u_i} \partial u_i" /></div>
+
+<p align = 'justify'>This logarithmic transformation algebra demonstrates the mathematical issues with assumption that error term is independent of exogenous variable (or predictor). The logarithmic transformation may be in violation of A3 due to exogenity. This term refers to which the exogenous variable is correlated with error term.</p>
+
+<div align = 'center'><img src="https://latex.codecogs.com/svg.image?e^{x_i&space;\beta}&space;&plus;&space;u_i&space;\not\approx&space;e^{x_i&space;\hat\beta}&space;\frac{1}{n}\sum_{i=1}^n&space;e^{\hat&space;u_i}" title="e^{x_i \beta} + u_i \not\approx e^{x_i \hat\beta} \frac{1}{n}\sum_{i=1}^n e^{\hat u_i}" /></div>
