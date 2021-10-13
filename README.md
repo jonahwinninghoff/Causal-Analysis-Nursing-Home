@@ -48,4 +48,4 @@
   
 <p align = 'justify'> But there are 36 features in total besides target variable. An attempt to select features manually is not possible since the total possible combinations are 68,719,476,736. Two automations are, for that specific reasons, in use in attempting to optimize a model, which are the least shrinkage and selection operator (lasso) and Bayes optimal feature selection.</p>
 
-The lasso regularization
+The lasso regularization is a popular method that proves to be successful in data science. The function of this regularization is the residual sum of squares plus the penalty. The penalty is <img src="https://latex.codecogs.com/svg.image?\lambda&space;\sum_{j=1}^{p}\left|&space;\beta_j&space;\right|" title="\lambda \sum_{j=1}^{p}\left| \beta_j \right|" />.
