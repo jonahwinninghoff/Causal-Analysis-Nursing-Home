@@ -36,6 +36,6 @@
 
 ![image](https://user-images.githubusercontent.com/52142917/137057850-7eeea348-4d7b-4aad-96c0-a24307a53857.png)
 
-The expected difference is by averaging scores tied with particular measure code and subtracting by these without this code. As indicated by the plot, the confidence interval is difficult to be seen due to small standard errors. The margins of errors are between 0.001 and 0.002. As the plot shown, the observed difference for catheter-related measure corde is lower than -40 while the observed difference for depressive-related measure code is higher than 60. Intuitively, the facilities are likely to perform poorly with treating residetns who have catheter inserted and left in their bladders while they do well with treating residents who have depressive symptoms.
+<p align = 'justify'> The expected difference is by averaging scores tied with particular measure code and subtracting by these without this code. As indicated by the plot, the confidence interval is difficult to be seen due to small standard errors. The margins of errors are between 0.001 and 0.002. As the plot shown, the observed difference for catheter-related measure corde is lower than -40 while the observed difference for depressive-related measure code is higher than 60. Intuitively, the facilities are likely to perform poorly with treating residetns who have catheter inserted and left in their bladders while they do well with treating residents who have depressive symptoms.</p>
 
 
