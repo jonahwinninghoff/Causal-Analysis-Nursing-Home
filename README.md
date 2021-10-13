@@ -54,7 +54,7 @@
 
 - <p align = 'justify'> <b>Surrogate function:</b> the probablistic model is being built to exploit what is known and it alters in light of new information.</p>
 
-  - <p align = 'justify'> <b>Acquistion function:</b> this function is to calculate a vector of hyperparameters that likely yield higher local maximum of objective function using surrogate function.</p>
+- <p align = 'justify'> <b>Acquistion function:</b> this function is to calculate a vector of hyperparameters that likely yield higher local maximum of objective function using surrogate function.</p>
 
 <p align = 'justify'>One of these studies shows that this approach has the ability to compete with many state-of-the-art methods (Ahmed et al., 2015).</p>
 
