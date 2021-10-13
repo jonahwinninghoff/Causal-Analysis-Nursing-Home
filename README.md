@@ -98,6 +98,6 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 
 ## ACTIONABLE INSIGHTS <a id='insights'></a>
 
-When the causal relationship is established, each coefficient of exogenous variables is statistically different from zero at 5% using Huber-White (HCO covariance type) robust standard errors. The pseudo-R-squared score is 32.54% while the p-value for LLR is below 5%. The null hypothesis for LLR is that the fit of the intercept-only model and causal model are equal is rejected. Every coefficient of exogenous variables is an important contributor to this model except for intercept. The p-value for intercept is 0.881.
+<p align = 'justify'> When the causal relationship is established, each coefficient of exogenous variables is statistically different from zero at 5% using Huber-White (HCO covariance type) robust standard errors. The pseudo-R-squared score is 32.54% while the p-value for LLR is below 5%. The null hypothesis for LLR is that the fit of the intercept-only model and causal model are equal is rejected. Every coefficient of exogenous variables is an important contributor to this model except for intercept. The p-value for intercept is 0.881.</p>
 
 
