@@ -92,7 +92,7 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 
 <p align = 'justify'>Because the Breusch-Pagan test confirms that the null hypothesis that the error variances are all equal is rejected at the significance level, this assumption for consistency is in use. At least one coefficient is heteroskedastic. More importnatly, the causal model is contemporaneously exogenous, a weaker version of strict exogenity. In other words, the serial correlation may be existed since the <i>Provider Information</i> dataset is cross-sectional.</p>
 
-<img src="https://latex.codecogs.com/svg.image?y_i&space;=&space;\phi&space;(\beta_0&space;&plus;&space;\beta_1&space;bed_i&space;&plus;&space;\beta_2&space;hr_i&space;&plus;&space;cond_i&space;\beta)&space;&plus;&space;u_i" title="y_i = \phi (\beta_0 + \beta_1 bed_i + \beta_2 hr_i + cond_i \beta) + u_i" />
+<div align = 'center'><img src="https://latex.codecogs.com/svg.image?y_i&space;=&space;\phi&space;(\beta_0&space;&plus;&space;\beta_1&space;bed_i&space;&plus;&space;\beta_2&space;hr_i&space;&plus;&space;cond_i&space;\beta)&space;&plus;&space;u_i" title="y_i = \phi (\beta_0 + \beta_1 bed_i + \beta_2 hr_i + cond_i \beta) + u_i" /></div>
 
 
 
