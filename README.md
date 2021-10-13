@@ -109,4 +109,6 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 - <p align = 'justify'>More surprisingly, when the <i>h<sub>i</sub></i> interacts with <i>lpn<sub>i</sub></i>, the coefficient is -0.0881 with margin of error equal 0.07, and that is, the incremental increase in the number of hours that license practical nurses spend has a negative impact on this rating at the significance level.</p>
 - <p align = 'justify'>Having family members on the council has positive impact on this rating but when the <i>bed<sub>i</sub></i> interacts with this variable, the coefficient is -0.011 with margin of error equal to 0.008, which means increase in number of certified beds that lead to the decrease in this rating even with family members on the council.</p>
 
+<p align = 'justify'>Tethered to this causal analysis, the measure quality for depressive-related code is higher while this score for catheter-related code is lower. There is potential linkage between roles of nurses. For example, the role of registered nurses is to administer medication and treatments while the role of license practical nurses comforts the residents and provides the basic cares including inserting catheters.</p>
+
 
