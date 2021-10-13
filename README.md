@@ -90,6 +90,7 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 
 <div align = 'center'><img src="https://latex.codecogs.com/svg.image?A&space;=&space;-&space;E\left&space;[&space;H(\omega_i,\theta_0)&space;\right&space;]" title="A = - E\left [ H(\omega_i,\theta_0) \right ]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://latex.codecogs.com/svg.image?V&space;=&space;E[&space;s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" title="V = E[ s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" /></div>
 
+<p align = 'justify'>The heteroskedastic assumption for consistency is in use because the Breusch-Pagan test confirms that the null hypothesis that the error variances are all equal is rejected at the significance level. At least one coefficient is heteroskedastic. More importnatly, the causal model is contemporaneously exogenous, a weaker version of strict exogenity. In other words, the serial correlation may be existed since the <i>Provider Information</i> dataset is cross-sectional.</p>
 
 
 
