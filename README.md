@@ -30,7 +30,7 @@
 
 <p align = 'justify'>Because this continuous score is ε(0,100) and cross-sectional, the continuous version of binomial called <i>Beta</i> distribution is use. Both parameters help build this theoretical distribution using random generator (Sinharay, 2010). As the result shown, the empirical distribution is not consistent with the theoretical one. The shape of distribution is unlikely to alter due to Law of Large Number. The adjusted density plot is a demonstration.</p>
 
-![](https://user-images.githubusercontent.com/52142917/137056882-eb193352-6e31-489b-80d9-b5b9aa992b89.png)
+![image](https://user-images.githubusercontent.com/52142917/137193687-e4111f44-9e3d-4820-aefe-a1a469574a6a.png)
 
 <p align = 'justify'>The permutation test can be instead used for testing the null hypothesis. This hypothesis is that two groups are within the same distribution. Since this hypothesis tests against 13 different measure codes, the alpha level with Bonferroni correction is 0.38%. The purpose of Bonferroni correction is to ensure that the chance of Type I Error is minimal.</p>
 
