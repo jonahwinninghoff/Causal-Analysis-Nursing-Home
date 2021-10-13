@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)**
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -95,5 +95,9 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 <div align = 'center'><img src="https://latex.codecogs.com/svg.image?y_i&space;=&space;\phi&space;(\beta_0&space;&plus;&space;\beta_1&space;bed_i&space;&plus;&space;\beta_2&space;hr_i&space;&plus;&space;cond_i&space;\beta)&space;&plus;&space;u_i" title="y_i = \phi (\beta_0 + \beta_1 bed_i + \beta_2 hr_i + cond_i \beta) + u_i" /></div>
 
 <p align = 'justify'>The causal model contains &#934;(.) that is Probit function. The <i>cond<sub>i</sub>&#946;</i> is a vector of conditions that include the level of quality care and competency the staff provides, type of location area and kind of environment residents live in, and kind of vulnerability residents have.</p>
+
+## ACTIONABLE INSIGHTS <a id='insights'></a>
+
+When the causal relationship is established, each coefficient of exogenous variables is statistically different from zero at 5% using Huber-White (HCO covariance type) robust standard errors. The pseudo-R-squared score is 32.54% while the p-value for LLR is below 5%. The null hypothesis for LLR is that the fit of the intercept-only model and causal model are equal is rejected. Every coefficient of exogenous variables is an important contributor to this model except for intercept. The p-value for intercept is 0.881.
 
 
