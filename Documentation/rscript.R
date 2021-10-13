@@ -70,7 +70,7 @@ ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Val
   geom_errorbar(aes(ymin=CI_lower, ymax=CI_high), width=0.4,
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5)+
   coord_flip()+
-  labs(y="Expected difference (score between -100 - 100) with 95% CI", x=NULL)+
+  labs(y="Expected difference (score between -100 - 100) with 99% CI", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
        panel.grid.minor = element_line(color = '#c7f3ff'),
        panel.grid.major = element_line(color = '#edfbff'),
@@ -87,7 +87,7 @@ ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Val
   geom_errorbar(aes(ymin=CI_lower, ymax=CI_high), width=0.4,
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5)+
   coord_flip()+
-  labs(y="Expected difference (score between -100 - 100) with 95% CI", x=NULL)+
+  labs(y="Expected difference (score between -100 - 100) with 99% CI", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
         panel.grid.minor = element_line(color = '#c7f3ff'),
         panel.grid.major = element_line(color = '#edfbff'),
