@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)** | **[Future](#future)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)** | **[Future](#future)** | **[References](#refer)
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -72,7 +72,7 @@
 - **A4:** homoskedasticity and no serial correlation
 - **A5:** normality of the error
 
-<p align = 'justify'>For this analysis, the causal model does not follow A1 and A4 assumptions. The endogenous variable (or target variable) is limited between 1 and 5 points that is also known to be Limited Dependent Variable (LDV). The popular solution is logarithmic transformation without Monte Carlo simulation is, unfortunately, incorrect. This particular model misspecification is called Duan's Smear.</p>
+<p align = 'justify'>For this analysis, the causal model does not follow A1 and A4 assumptions. The endogenous variable (or target variable) is limited between 1 and 5 points that is also known to be Limited Dependent Variable (LDV). The popular solution is logarithmic transformation without Monte Carlo simulation is, unfortunately, incorrect. This particular model misspecification is called Duan's Smear (Goldstein, 2020).</p>
 
 <p align = 'justify'> The solution is to use nonlinear least square called Probit with Quasi-Maximum Likelihood Estimation condition (QMLE). This model is more efficient to heteroskedasticity. The heteroskedasticity is the variance of residual term that is not constant through the regression. For example, the causla model is consistent and asymptotically normal where V is not proportional to A. The assumption for consistency is:</p>
 
@@ -108,4 +108,28 @@
 - <p align = 'justify'>The alternative study is the existing dataset that can establish a causal relationship by comparing particular facilites that have undergone LPN-to-RN training with these that do not.</p>
 - <p align = 'justify'>The direct solution to inflation in self-report data is by adopting AI solutions. For example, if the data audit is undertaken to identify inflation and adjust them, this information can be in use to train either machine learning or deep learning in order to make data audit cost-effective.</p>
 
+## REFERENCES <a id = 'refer'></a>
+
+"Technical Details." *Nursing homes including rehab services*, the Centers for Medicare and Medicaid Services, Sep. 2021. https://data.cms.gov/provider-data/topics/nursing-homes/technical-details#health-inspections
+
+Ahmed, S., Narasimhan, H., and Agarwal, S. "Bayes Optimal Feature for Supervised Learning with General Performance Measures." arXiv, 2015. http://auai.org/uai2015/proceedings/papers/72.pdf
+
+Boehmke, B. “Regularized Regression.” *UC Business Analytics R Programming Guide*, University of Cincinnati, 2021. http://uc-r.github.io/regularized_regression#lasso
+
+Datta, A., Fredrikson, M., Ko, G., Mardziel, P., and Sen, S. "Proxy Discrimination in Data-Driven Systems." *Theory and Experiments with Learnt Programs*, arXiv, 25 Jul. 2017. https://arxiv.org/abs/1707.08120
+
+Freud, RJ., Wilson, WJ., and Mohr, DL. "Inferences for Two or More Means." *Statistical Methods, Third Edition*, Academic Press, 2010. https://doi.org/10.1016/B978-0-12-374970-3.00006-8
+
+Goldstein, Nathan. "Lecture 1. Foundations of Microeconometrics." *Microeconometrics*, Zanvyl Krieger School of Arts and Sciences Johns Hopkins University, 2021.
+
+Kaynig-Fattkau, V., Blitzstein, J., and Pfister, H. "CS109 - Data Science." *Decision Trees*, Harvard University, 2021. https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=c22cbde8-94dd-42ad-86ef-091448ad02e4
+
+Khandelwal, P. "Which algorithm takes the crown: Light GBM vs XGBOOST?" Analytics Vidhay, 12 Jun 2017. analyticsvidhya.com/blog/2017/06/
+which-algorithm-takes-the-crown-light-gbm-vs-xgboost/
+
+Park, Y. and Ho JC. "PaloBoost." *An Overfitting-robust TreeBoost with Out-of-Bag Sample Regularization Techniques*, Emory University, 22 Jul 2018. http://arxiv-export-lb.library.cornell.edu/pdf/1807.08383
+
+Silver-Greenberg, Jessica, and Robert Gebeloff. “Maggots, Rape and Yet Five Stars: How U.S. Ratings of Nursing Homes Mislead the Public.” *How U.S. Ratings of Nursing Homes Mislead the Public*, New York Times, 13 Mar. 2021.
+
+Sinharay, S. "Coninuous Probability Distributions." *The International Encyclopedia of Education*, Elsevier Science, 2010. https://doi.org/10.1016/B978-0-08-044894-7.01720-6
 
