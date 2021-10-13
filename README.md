@@ -106,6 +106,7 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 
 - <p align = 'justify'>When the <i>h<sub>i</sub></i> interacts with <i>nur_aid<sub>i</sub></i>, the increase in number of hours that the nurse aides spend with residents each day has little to no impact on health inspection rating.</p>
 - <p align = 'justify'>The registered nurses that interacts with <i>h<sub>i</sub></i> have a positive impact on this rating at the significance level.</p>
-- <p align = 'justify'>More surprisingly, when the <i>h<sub>i</sub></i> interacts with <i>lpn<sub>i</sub>, the coefficient is -0.0881 with margin of error equal 0.07, and that is, the incremental increase in the number of hours that license practical nurses spend has a negative impact on this rating at the significance level.</p>
+- <p align = 'justify'>More surprisingly, when the <i>h<sub>i</sub></i> interacts with <i>lpn<sub>i</sub></i>, the coefficient is -0.0881 with margin of error equal 0.07, and that is, the incremental increase in the number of hours that license practical nurses spend has a negative impact on this rating at the significance level.</p>
+- <p align = 'justify'>Having family members on the council has positive impact on this rating but when the <i>bed<sub>i</sub></i> interacts with this variable, the coefficient is -0.011 with margin of error equal to 0.008, which means increase in number of certified beds that lead to the decrease in this rating even with family members on the council.</p>
 
 
