@@ -50,11 +50,11 @@
 
 <p align = 'justify'>  The lasso regularization is a popular method that proves to be successful in data science. This function is robust to the outlier but it is not differentiable due to piecewise function inderivative (Boehmke, 2021). This algorithm the ability to identify unimportant predictors due to sparsity (predictors are set to 0). The Bayes optimal feature selection is different becuase it is an iterative process by balancing its needs of exploration and exploitation depending on three functions.</p>
 
-- **Objective function:** the true shape of this function is not observable and it can only reveal some data points that can otherwise be expensive to compute.
+- <p align = 'justify'> <b>Objective function:</b> the true shape of this function is not observable and it can only reveal some data points that can otherwise be expensive to compute.</p>
 
-- **Surrogate function:** the probablistic model is being built to exploit what is known and it alters in light of new information.
+- <p align = 'justify'> <b>Surrogate function:</b> the probablistic model is being built to exploit what is known and it alters in light of new information.</p>
 
-- **Acquistion function:** this function is to calculate a vector of hyperparameters that likely yield higher local maximum of objective function using surrogate function.
+  - <p align = 'justify'> <b>Acquistion function:</b> this function is to calculate a vector of hyperparameters that likely yield higher local maximum of objective function using surrogate function.</p>
 
 <p align = 'justify'>One of these studies shows that this approach has the ability to compete with many state-of-the-art methods (Ahmed et al., 2015).</p>
 
