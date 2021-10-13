@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)**
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -14,4 +14,11 @@
 ## METHOD <a id='method'></a>
 
 <p align ='justify'> In attempting to establish causal relationship, there are two different frameworks, which are data science and econometrics. The data science approach begins by searching patterns in the data in order to test model against data. But the role of econometrics is reversed. For example, the ecnometric approach begins by writing a causal model of economic behavior and its underyling assumptions, followed by determining whether the available data fits in the causal model. </p>
+
+## DATASETS <a id ='data'></a>
+
+<p align = 'justify'> Two datasets obtain from CMS databases are Minimum Data Set (MDS) Quality Measures and Provider Information datasets. The MDS dataset contains over 15,000 different providers from 50 states plus District of Columbia. The target variable is measure quality score. But none of variables holds predictive power for measure quality score. Some features are useful for statistical insights. The second dataset contains more than 80 features with at least 15,000 entities. At least 70 features are usable for prediction. </p>
+
+- [![MDS Quality Measures](https://github.com/jonahwinninghoff/Springboard_Capstone_Project/blob/main/Assets/NH_QualityMsr_MDS_Jun2021.csv.zip)]
+- [![Provider Information](https://github.com/jonahwinninghoff/Springboard_Capstone_Project/blob/main/Assets/NH_ProviderInfo_Aug2021.csv.zip)]
 
