@@ -88,9 +88,7 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 
 <div align = 'center'><img src="https://latex.codecogs.com/svg.image?\sqrt{n}\hat\theta_{QMLE}&space;-&space;\theta_0)\sim^a&space;N(0,A^{-1}VA^{-1})&space;" title="\sqrt{n}\hat\theta_{QMLE} - \theta_0)\sim^a N(0,A^{-1}VA^{-1}) " /></div>
 
-where
-
-<div align = 'center'><img src="https://latex.codecogs.com/svg.image?A&space;=&space;-&space;E\left&space;[&space;H(\omega_i,\theta_0)&space;\right&space;]" title="A = - E\left [ H(\omega_i,\theta_0) \right ]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://latex.codecogs.com/svg.image?V&space;=&space;E[&space;s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" title="V = E[ s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" /></div>
+<div align = 'center'>where&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://latex.codecogs.com/svg.image?A&space;=&space;-&space;E\left&space;[&space;H(\omega_i,\theta_0)&space;\right&space;]" title="A = - E\left [ H(\omega_i,\theta_0) \right ]" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://latex.codecogs.com/svg.image?V&space;=&space;E[&space;s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" title="V = E[ s(\omega_i,\theta_0)s(\omega_i,\theta_0)']" /></div>
 
 
 
