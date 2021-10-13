@@ -4,9 +4,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capstone-Project-2-Causal-Analysis-Nursing-Home-Facilities/raw/main/Documentation/Report.pdf)
-
 **[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)** | **[Future](#future)** | **[References](#refer)**
+
+
+See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capstone-Project-2-Causal-Analysis-Nursing-Home-Facilities/raw/main/Documentation/Report.pdf)
 
 
 ## OVERVIEW <a id='overview'></a>
