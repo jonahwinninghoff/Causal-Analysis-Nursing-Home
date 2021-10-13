@@ -36,6 +36,22 @@ ggplot(data = compare, aes(x = score, fill=group, color=group)) +
   scale_fill_manual(values = c('#fcad03','#00a8f0'))+
   scale_color_manual(values = c('#fcad03','#00a8f0'))
 
+# Save this plot
+ggsave("densityplot.pdf",width = 6,   height = 4)
+ggplot(data = compare, aes(x = score, fill=group, color=group)) +
+  geom_density(alpha = 0.5,bw=0.009) +
+  labs(fill = "", color = "")+
+  theme(panel.background = element_rect(fill = 'white'),
+        panel.grid.minor = element_line(color = '#c7f3ff'),
+        panel.grid.major = element_line(color = '#edfbff'),
+        axis.title.y = element_text(vjust = .5, color='dimgrey',size=12),
+        axis.title.x = element_text(hjust = .5,color='dimgrey',size=12),
+        legend.position="top",
+        legend.text = element_text(color='dimgrey',size=12))+
+  scale_fill_manual(values = c('#fcad03','#00a8f0'))+
+  scale_color_manual(values = c('#fcad03','#00a8f0'))
+dev.off()
+
 # Read non_parametric tests
 directory= paste(getwd(),'Report/nonparametric_tests',sep='/')
 df <- read.csv(directory)
@@ -54,13 +70,31 @@ ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Val
   geom_errorbar(aes(ymin=CI_lower, ymax=CI_high), width=0.4,
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5)+
   coord_flip()+
-  labs(y="Observed difference (score between -100 - 100)", x=NULL)+
+  labs(y="Expected difference (score between -100 - 100) with 95% CI", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
        panel.grid.minor = element_line(color = '#c7f3ff'),
        panel.grid.major = element_line(color = '#edfbff'),
        axis.title.x = element_text(vjust = .5, color='dimgrey',size=12),
        axis.text.x = element_text(colour = 'dimgrey',size=12),
        axis.text.y = element_text(colour = 'dimgrey',size=12))
+
+## Save this plot
+ggsave("differplot.pdf",width = 6,   height = 4)
+
+ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Value)) + 
+  geom_point(position=position_dodge(width=0.75),color='#fcad03',alpha=0.7,size=3.7)+
+  geom_abline(intercept = 0, slope = 0, lty=2,color='#00a8f0')+
+  geom_errorbar(aes(ymin=CI_lower, ymax=CI_high), width=0.4,
+                position=position_dodge(width=0.75),color='#00a8f0',size=0.5)+
+  coord_flip()+
+  labs(y="Expected difference (score between -100 - 100) with 95% CI", x=NULL)+
+  theme(panel.background = element_rect(fill = 'white'),
+        panel.grid.minor = element_line(color = '#c7f3ff'),
+        panel.grid.major = element_line(color = '#edfbff'),
+        axis.title.x = element_text(vjust = .5, color='dimgrey',size=12),
+        axis.text.x = element_text(colour = 'dimgrey',size=12),
+        axis.text.y = element_text(colour = 'dimgrey',size=12))
+dev.off()
 
 # Read actionable report
 directory <- paste(getwd(),'Report/actionable',sep='/')
@@ -76,7 +110,7 @@ ggplot(df, aes(x = reorder(X,coef,FUN=mean), y=coef)) +
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5) +
   geom_abline(intercept = 0, slope = 0, lty=2,color='#00a8f0')+
   coord_flip()+
-  labs(y="Average Partial Effect", x=NULL)+
+  labs(y="Coefficients with 95% confidence intervals", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
         panel.grid.minor = element_line(color = '#c7f3ff'),
         panel.grid.major = element_line(color = '#edfbff'),
@@ -84,3 +118,20 @@ ggplot(df, aes(x = reorder(X,coef,FUN=mean), y=coef)) +
         axis.text.x = element_text(colour = 'dimgrey',size=12),
         axis.text.y = element_text(colour = 'dimgrey',size=12))
 
+## Save this plot
+ggsave("causal.pdf",width = 6,   height = 4)
+
+ggplot(df, aes(x = reorder(X,coef,FUN=mean), y=coef)) + 
+  geom_point(position=position_dodge(width=0.75),color='#fcad03',alpha=0.7,size=3.7)+  
+  geom_errorbar(aes(ymin=X0.025, ymax=X0.975), width=0.4,
+                position=position_dodge(width=0.75),color='#00a8f0',size=0.5) +
+  geom_abline(intercept = 0, slope = 0, lty=2,color='#00a8f0')+
+  coord_flip()+
+  labs(y="Coefficients with 95% confidence intervals", x=NULL)+
+  theme(panel.background = element_rect(fill = 'white'),
+        panel.grid.minor = element_line(color = '#c7f3ff'),
+        panel.grid.major = element_line(color = '#edfbff'),
+        axis.title.x = element_text(vjust = .5, color='dimgrey',size=12),
+        axis.text.x = element_text(colour = 'dimgrey',size=12),
+        axis.text.y = element_text(colour = 'dimgrey',size=12))
+dev.off()

@@ -63,11 +63,11 @@ $\vspace{0.05cm}$
 
 $\vspace{0.05cm}$
 
-\noindent This approach is more preferable over the histogram approach since it does not have binning bias. The binning bias refers to the change in the number of bins that changes meanings in descriptive statistics. For example, the histogram shows, when the size of bins is small, the distribution is Gaussian. When the size of bins is increased, the distribution turns bimodal. The point in mentioning this is that the ECDF approach should be in use to better infer what presents.
+\noindent This approach is more preferable over the histogram approach since it does not have binning bias. The binning bias refers to the change in the number of bins that changes meanings in descriptive statistics. For example, the histogram shows, when the size of bins is small, the distribution is Gaussian. When the size of bins is increased, the distribution turns bimodal. The point in mentioning this is that the ECDF approach should be in use to better infer what is presented.
 
 $\vspace{0.05cm}$
 
-\noindent This distribution should be identical to or, at least, consistent with the theoretical one. Given that this score is (0,100) and cross-sectional, the continuous version of binomial distribution called Beta distribution is in use to compare this distribution. Both alpha and beta parameters are unknown, so the identifications should be established. These identifications help to construct the theoretical Beta distribution using random generator (Sinharay, 2010). Both identifications for alpha and beta parameters are:
+\noindent This distribution should be identical to or, at least, consistent with the theoretical one. Given that this score is $\epsilon$(0,100) and cross-sectional, the continuous version of binomial distribution called Beta distribution is in use to compare this distribution. Both alpha and beta parameters are unknown, so the identifications should be established. These identifications help to construct the theoretical Beta distribution using random generator (Sinharay, 2010). Both identifications for alpha and beta parameters are:
 
 $\vspace{0.05cm}$
 
@@ -77,7 +77,7 @@ $\hat\beta = (1- \bar x) \left[ \frac{\bar x (1- \bar x)}{s^2-1} \right]$
 
 $\vspace{0.05cm}$
 
-\noindent As the result shown, the ECDF descriptive statistics concludes that the empirical distribution is not consistent with the theoretical Beta distribution. Given that the sampling size is larger than 200,000, this distribution is less likely to alter when the size increases due to Law of Large Number. This score is nonparametrically distributed. The permutation test can be instead used for testing the null hypothesis. The adjusted density plot is more explainable for the broader audience. As indicated by this plot, the kurtotic value in empirical distribution is greater than this value in theoretical distribution. 
+\noindent As the result shown, the ECDF descriptive statistics concludes that the empirical distribution is not consistent with the theoretical Beta distribution. Given that the sampling size is larger than 200,000, this distribution is less likely to alter when the size increases due to Law of Large Number. This score is nonparametrically distributed. The permutation test can be instead used for testing the null hypothesis. The adjusted density plot is more explainable for the broader audience. As indicated by this plot, the kurtotic value in theoretical distribution is greater than this value in empirical distribution. 
 
 $\vspace{0.05cm}$
 
@@ -145,7 +145,7 @@ ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Val
   geom_errorbar(aes(ymin=CI_lower, ymax=CI_high), width=0.4,
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5)+
   coord_flip()+
-  labs(y="Observed difference (score between -100 - 100)", x=NULL)+
+  labs(y="Expected difference (score between -100 - 100) with 95% confidence interval", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
        panel.grid.minor = element_line(color = '#c7f3ff'),
        panel.grid.major = element_line(color = '#edfbff'),
@@ -209,11 +209,11 @@ $\vspace{0.05cm}$
 
 $\vspace{0.05cm}$
 
-\noindent In social science, the R-squared score falling between 0.2 and 0.3 is considered to be acceptable. Some suggest that the minimal requirement for this approach is that the adjusted R-squared score must be positive. But in technical sense, the stipulation with model misspecification is much relevant, following by Gauss Markov assumption. Even though the data science approach selects features that yield higher model performance, the econometric approach is human-centric. This approach begins by writing the causal model and its underlying assumptions. In the nutshell, this approach is to test data against model. 
+\noindent In social science, the R-squared score falling between 0.2 and 0.3 is considered to be acceptable. Some suggest that the minimal requirement for this approach is that the adjusted R-squared score must be positive. But in technical sense, the stipulation with model misspecification is much relevant, following by Gauss Markov assumptions. Even though the data science approach selects features that yield higher model performance, the econometric approach is human-centric. This approach begins by writing the causal model and its underlying assumptions. In the nutshell, this approach is to test data against model. 
 
 $\vspace{0.05cm}$
 
-\noindent As mentioned earlier, Gauss Markov assumptions are fundamental of the econometric approach, though the causal model may depart from some assumptions, as the following: linearity in parameters (A1), no perfect (A2), zero conditional mean error (A3), homoskedasticity and no serial correlation (A4), and normality of the error (A5). This causal model does not follow A1 and A4 assumptions. The endogenous variable (or target variable) is limited between 1 and 5 so that it is Limited Dependent Variable (LDV). The multiple ordinary least squares (OLS) are not suitable for LDV. The popular solution is logarithmic transformation is, unfortunately, misspecified. This particular model misspecification is called Duan’s Smear.
+\noindent As mentioned earlier, Gauss Markov assumptions are fundamental of the econometric approach, though the causal model may depart from some assumptions, as the following: linearity in parameters (A1), no perfect collinearity (A2), zero conditional mean error (A3), homoskedasticity and no serial correlation (A4), and normality of the error (A5). This causal model does not follow A1 and A4 assumptions. The endogenous variable (or target variable) is limited between 1 and 5 so that it is Limited Dependent Variable (LDV). The multiple ordinary least squares (OLS) are not suitable for LDV. The popular solution is logarithmic transformation is, unfortunately, misspecified. This particular model misspecification is called Duan’s Smear.
 
 $\vspace{0.05cm}$
 
@@ -229,7 +229,7 @@ $\vspace{0.05cm}$
 
 $\vspace{0.05cm}$
 
-$e^{x_i \beta } + u_i \not \approx e^{x_i \hat \beta } \Sigma^n_{i=1} e^{\hat u_i} \partial u_i$
+$e^{x_i \beta } + u_i \not \approx e^{x_i \hat \beta } \frac{1}{n}\Sigma^n_{i=1} e^{\hat u_i}$
 
 $\vspace{0.05cm}$
 
@@ -268,7 +268,7 @@ $\vspace{0.05cm}$
 
 $\vspace{0.05cm}$
 
-\noindent At least one coefficient of exogenous variable, intuitively, has important contributions to this model. Except for the p-value for intercept, each p-value for every coefficient is below 0.01. The p-value for intercept equals 0.881, so this coefficient is not different from zero. A chance of receiving this rating 3 point is, *cerberus paribus*, 50%. 
+\noindent At least one coefficient of exogenous variable, intuitively, has important contributions to this model. Except for the p-value for intercept, each p-value for every coefficient is below 0.01. The p-value for intercept equals 0.881, so this coefficient is not different from zero.
 
 $\vspace{0.05cm}$
 
@@ -288,7 +288,7 @@ ggplot(df, aes(x = reorder(X,coef,FUN=mean), y=coef)) +
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5) +
   geom_abline(intercept = 0, slope = 0, lty=2,color='#00a8f0')+
   coord_flip()+
-  labs(y="Average Partial Effect", x=NULL)+
+  labs(y="Coefficients with 95% confidence intervals", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
         panel.grid.minor = element_line(color = '#c7f3ff'),
         panel.grid.major = element_line(color = '#edfbff'),
@@ -309,7 +309,7 @@ $\vspace{0.05cm}$
 
 $\vspace{0.05cm}$
 
-\noindent Another important finding is that having family members on the council has impactful implications on this rating. The coefficient of this variable is 0.43 with margin of error equal 0.30. But the coefficient of *bed_i* interacting with this variable is -0.011 with margin of error equal to 0.008.  The increase in the number of certified beds, *Cerberus paribus*, lead to the decrease in this rating. This decline is exacerbated when family members get involved. 
+\noindent Another important finding is that having family members on the council has impactful implications on this rating. The coefficient of this variable is 0.43 with margin of error equal 0.30. But the coefficient of *bed_i* interacting with this variable is -0.011 with margin of error equal to 0.008.  The increase in the number of certified beds, *cerberus paribus*, lead to the decrease in this rating. This decline is exacerbated when family members get involved. 
 
 $\vspace{0.05cm}$
 
@@ -317,7 +317,7 @@ $\vspace{0.05cm}$
 
 # **\textbf{Future Work}**
 
-\noindent As mentioned earlier, there is potential linkage between the roles of nurses and negative effects of health inspection rating. However, the linkage is indetermined since the MDS and Provider Information datasets are incompatible based on the record linkage. The future study hopefully has access to CMS databases that allow to establish the linkage to estimate what effects would be. Such information can determine how to properly address the moral hazard problem in an implicate manner. The increase in monitoring is one of many ways to reduce this behavior. This study shows that when all other variables are equal, registered nurses have positive impacts on health inspection rating while the licensed practical nurses have negative impacts. In other words, this causal analysis may have another solution. 
+\noindent As mentioned earlier, there is potential linkage between the roles of nurses and measure codes. However, the linkage is indetermined since the MDS and Provider Information datasets are incompatible based on the record linkage. The future study hopefully has access to CMS databases that allow to establish the linkage to estimate what effects would be. Such information can determine how to properly address the moral hazard problem in an implicate manner. The increase in monitoring is one of many ways to reduce this behavior. This study shows that when all other variables are equal, registered nurses have positive impacts on health inspection rating while the licensed practical nurses have negative impacts. In other words, this causal analysis may have another solution. 
 
 $\vspace{0.05cm}$
 
