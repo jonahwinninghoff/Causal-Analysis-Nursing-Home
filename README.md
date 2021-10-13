@@ -106,7 +106,7 @@
 - <p align = 'justify'>As mentioned earlier, there is potential linkage between the roles of nurses and measure codes. However, the linkage is indetermined since two datasets are incompatible based on the record linkage. Hopefully, the future study has this particular dataset that can be in use to establish the causal relationship.</p>
 - <p align = 'justify'>The CMS pilot is established by either helping to provide financial aid for LPN-to-RN career pathway or promote awareness of existing programs. The randomized controlled trials (RCT) should be in use to identify real impacts either approaches have on health inspection rating over time. </p>
 - <p align = 'justify'>The alternative study is the existing dataset that can establish a causal relationship by comparing particular facilites that have undergone LPN-to-RN training with these that do not.</p>
-- <p align = 'justify'>The direct solution to inflation in self-report data is adopt AI solutions. For example, if the data audit is undertaken to identify inflation and adjust, this information can be in use to train either machine learning or deep learning in order to make data audit cost-effective.</p>
+- <p align = 'justify'>The direct solution to inflation in self-report data is adopt AI solutions including Natural Language Processing. For example, if the data audit is undertaken to identify inflation and adjust, this information can be in use to train either machine learning or deep learning in order to make data audit cost-effective.</p>
 
 ## REFERENCES <a id = 'refer'></a>
 
