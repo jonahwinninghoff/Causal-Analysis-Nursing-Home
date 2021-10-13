@@ -125,7 +125,7 @@ Goldstein, Nathan. "Lecture 1. Foundations of Microeconometrics." *Microeconomet
 Kaynig-Fattkau, V., Blitzstein, J., and Pfister, H. "CS109 - Data Science." *Decision Trees*, Harvard University, 2021. https://matterhorn.dce.harvard.edu/engage/player/watch.html?id=c22cbde8-94dd-42ad-86ef-091448ad02e4
 
 Khandelwal, P. "Which algorithm takes the crown: Light GBM vs XGBOOST?" Analytics Vidhay, 12 Jun 2017. analyticsvidhya.com/blog/2017/06/
-which-algorithm-takes-the-crown-light-gbm-vs-xgboost/
+https://which-algorithm-takes-the-crown-light-gbm-vs-xgboost/
 
 Park, Y. and Ho JC. "PaloBoost." *An Overfitting-robust TreeBoost with Out-of-Bag Sample Regularization Techniques*, Emory University, 22 Jul 2018. http://arxiv-export-lb.library.cornell.edu/pdf/1807.08383
 
