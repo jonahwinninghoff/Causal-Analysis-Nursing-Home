@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)**
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -21,4 +21,12 @@
 
 - [MDS Quality Measures](https://github.com/jonahwinninghoff/Springboard_Capstone_Project/blob/main/Assets/NH_QualityMsr_MDS_Jun2021.csv.zip?raw=true)
 - [Provider Information](https://github.com/jonahwinninghoff/Springboard_Capstone_Project/blob/main/Assets/NH_ProviderInfo_Aug2021.csv.zip?raw=true)
+
+## STATISTICAL INFERENCE <a id ='statistics'></a> 
+
+<p align = 'justify'> The meausre quality in the MDS dataset is in use to describe the overall rating of what each facility does well associated with every measure code. The measure code associates with measure description that explains how this score is calculated. But as indicated by the complete data quality report, the score is not normally distributed. The Empirical Cumulative Distribution Function (ECDF) tool is undertaken to compare empirical distribution with theoretical *Beta* distribution and determine if the empirical distribution is parametric. The alpha and beta for theoretical one is unknown. The identifications for both parameters are: </p> 
+
+$\hat\alpha = \bar x \left[\frac{\bar x (1- \bar x)}{s^2 - 1}\right]$ 
+
+$\hat\beta = (1- \bar x) \left[ \frac{\bar x (1- \bar x)}{s^2-1} \right]$
 
