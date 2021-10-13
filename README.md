@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Data Wrangling](#wrangling)**
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -36,6 +36,8 @@
 
 ![image](https://user-images.githubusercontent.com/52142917/137058706-77dec24b-4136-4a86-a0a0-bb1a3c404959.png)
 
-<p align = 'justify'> The expected difference is by averaging scores tied with particular measure code and subtracting by these without this code. As indicated by the plot, the confidence interval is difficult to be seen due to small standard errors. The margins of errors are between 0.001 and 0.002. As the plot shown, the observed difference for catheter-related measure corde is lower than -40 while the observed difference for depressive-related measure code is higher than 60. Intuitively, the facilities are likely to perform poorly with treating residetns who have catheter inserted and left in their bladders while they do well with treating residents who have depressive symptoms. However, this plot is not established with causal inference due to self-report bias.</p>
+<p align = 'justify'> The expected difference is by averaging scores tied with particular measure code and subtracting by these without this code. As indicated by the plot, the confidence interval is difficult to be seen due to small standard errors. The margins of errors are between 0.001 and 0.002. As the plot shown, the observed difference for catheter-related measure corde is lower than -40 while the observed difference for depressive-related measure code is higher than 60. Intuitively, the facilities are likely to perform poorly with treating residetns who have catheter inserted and left in their bladders while they do well with treating residents who have depressive symptoms. However, this plot is not established with causal relationship due to self-report bias.</p>
 
+## DATA WRANGLING <a id ='wrangling'></a>
 
+<p align = 'justify'> As mentioned earlier, the Provider Information has many features. The challenge with this dataset is that several features are redundant (some are perfectly correlated) and wrangling process requires automation techniques to identify redundancies and leakages. The leakage refers to which the features in the training process do not exist when integrating the production, in turn, causes the predictive scores to overestimate. This is common mistake in data science. For example, the total weighted health survey score as a feature predicts the health inspection rating is a form of leakage. The final process is to investigate if several leaked features are overlooked. As a result, there are 30 leaked features found in this dataset. As a result, the number of features is reduced to 37. </p>
