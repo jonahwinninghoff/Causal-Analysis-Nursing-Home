@@ -49,8 +49,11 @@
 <p align = 'justify'> But there are 36 features in total besides target variable. An attempt to select features manually is not possible since the total possible combinations are 68,719,476,736. Two automations are, for that specific reasons, in use in attempting to optimize a model, which are the least shrinkage and selection operator (lasso) and Bayes optimal feature selection.</p>
 
 <p align = 'justify'>  The lasso regularization is a popular method that proves to be successful in data science. This function is robust to the outlier but it is not differentiable due to piecewise function inderivative (Boehmke, 2021). This algorithm the ability to identify unimportant predictors due to sparsity (predictors are set to 0). The Bayes optimal feature selection is different becuase it is an iterative process by balancing its needs of exploration and exploitation depending on three functions.</p>
+
 - **Objective function:** the true shape of this function is not observable and it can only reveal some data points that can otherwise be expensive to compute.
+
 - **Surrogate function:** the probablistic model is being built to exploit what is known and it alters in light of new information.
+
 - **Acquistion function:** this function is to calculate a vector of hyperparameters that likely yield higher local maximum of objective function using surrogate function.
 
 <p align = 'justify'>One of these studies shows that this approach has the ability to compete with many state-of-the-art methods (Ahmed et al., 2015).</p>
