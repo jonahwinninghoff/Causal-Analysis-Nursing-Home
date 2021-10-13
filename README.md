@@ -9,5 +9,5 @@
 
 ## OVERVIEW <a id='overview'></a>
 
-<p text-align: 'justify'> Established by the United States Centers for Medicare and Medicaid Services (CMS) in 2009, the star rating is a system that helps people to make decisions in which nursing home the senior residents would reside. The decision process to choosing the right facility is not easy and soulwrenching. However, during the COVID-19 pandemic, this system is a failure largely due to a lack of data audit and self-report bias. </p>
+<p text-align: justify> Established by the United States Centers for Medicare and Medicaid Services (CMS) in 2009, the star rating is a system that helps people to make decisions in which nursing home the senior residents would reside. The decision process to choosing the right facility is not easy and soulwrenching. However, during the COVID-19 pandemic, this system is a failure largely due to a lack of data audit and self-report bias. </p>
 
