@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)**
+**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)** | **[Future](#future)**
 
 
 ## OVERVIEW <a id='overview'></a>
@@ -110,5 +110,12 @@ The solution is to use nonlinear least square called Probit with Quasi-Maximum L
 - <p align = 'justify'>Having family members on the council has positive impact on this rating but when the <i>bed<sub>i</sub></i> interacts with this variable, the coefficient is -0.011 with margin of error equal to 0.008, which means increase in number of certified beds that lead to the decrease in this rating even with family members on the council.</p>
 
 <p align = 'justify'>Tethered to this causal analysis, the measure quality for depressive-related code is higher while this score for catheter-related code is lower. There is potential linkage between roles of nurses. For example, the role of registered nurses is to administer medication and treatments while the role of license practical nurses comforts the residents and provides the basic cares including inserting catheters.</p>
+
+## FUTURE RESEARCH <a id = 'future'></a>
+
+- <p align = 'justify'>As mentioned earlier, there is potential linkage between the roles of nurses and measure codes. However, the linkage is indetermined since two datasets are incompatible based on the record linkage. Hopefully, the future study has this particular dataset that can be in use to establish the causal relationship.</p>
+- <p align = 'justify'>The CMS pilot establishes by either helping provide financial aid for LPN-to-RN career pathway or promoting awareness of existing programs. The randomized controlled trials (RCT) should be in use to identify if either approaches have real impacts on health inspection rating over time. </p>
+- <p align = 'justify'>The alternative study is the existing dataset that can establish a causal relationship by comparing particular facilites that have undergone LPN-to-RN training with these that do not.</p>
+- <p align = 'justify'>The direct solution to inflation in self-report data is by adopting AI solutions. For example, if the data audit is undertaken to identify inflation and adjust them, this information can be in use to train either machine learning or deep learning in order to make data audit cost-effective.</p>
 
 
