@@ -67,7 +67,7 @@ See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capsto
 
 ## ECONOMETRIC METHOD <a id = 'econ'></a>
 
-<p align = 'justify'> To the extent that the causal relationship fails to establish, the previous discussion indicates the limits of data science approach. Resolving these issues are by adopting the econometric approach. Some suggest that the minimal requirement for this approach is that the adjusted R-squared score must be positive. In a technical sense, the approach stipulates with model misspecification. More importantly, Gauss Markov assumptions are fundamental of the econometric approach, though the causal may depart from some assumptions, as the following: </p>
+<p align = 'justify'> To the extent that the causal relationship fails to establish, the previous discussion indicates the limits of data science approach. Resolving these issues are by adopting the econometric approach. Some suggest that the minimal requirement for this approach is that the adjusted R-squared score must be positive. In a technical sense, the approach stipulates with model misspecification. More importantly, Gauss Markov assumptions are fundamental of the econometric approach, though the causal model may depart from some assumptions, as the following: </p>
 
 - **A1:** linearity in parameters
 - **A2:** no perfect collinearity
