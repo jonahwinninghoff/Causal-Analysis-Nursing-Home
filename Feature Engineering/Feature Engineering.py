@@ -142,7 +142,7 @@ plt.show()
 # In[14]:
 
 
-q['Provider Zip Code'] = np.trunc(q['Provider Zip Code']/10000).astype('int')
+q['National Area regional code'] = np.trunc(q['Provider Zip Code']/10000).astype('int')
 
 
 # In[15]:
