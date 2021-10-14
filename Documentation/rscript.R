@@ -135,3 +135,18 @@ ggplot(df, aes(x = reorder(X,coef,FUN=mean), y=coef)) +
         axis.text.x = element_text(colour = 'dimgrey',size=12),
         axis.text.y = element_text(colour = 'dimgrey',size=12))
 dev.off()
+
+# Check endoogeneity
+library(ivprobit)
+directory<-paste(getwd(),'foreconometrics',sep='/')
+df <- read.csv(directory)
+df <- subset(df, select = -c(X,const))
+names(df) <- c('ins_rat', 'zip', 'bed','repor',
+               'compl','fine','abu','fam','sprin',
+               'amo_fine','hr','lpn','nur_aid',
+               'rn')
+result <-ivprobit(ins_rat ~ zip + bed + repor + compl + fam + amo_fine + lpn + nur_aid + rn + hr | abu,df)
+
+
+
+
