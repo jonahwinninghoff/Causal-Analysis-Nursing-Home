@@ -91,7 +91,7 @@ See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capsto
 
 ## ACTIONABLE INSIGHTS <a id='insights'></a>
 
-<p align = 'justify'> When the causal relationship is established, each coefficient of exogenous variables is statistically different from zero at 5% using Huber-White (HCO covariance type) robust standard errors. The pseudo-R-squared score is 32.54% while the p-value for LLR is below 5%. The null hypothesis for LLR is that the fit of the intercept-only model and causal model as equal is rejected. Every coefficient of exogenous variables is an important contributor to this model except for intercept. The p-value for intercept is 0.881.</p>
+<p align = 'justify'> When the causal relationship is established, each coefficient of exogenous variables is statistically different from zero at 5% using Huber-White (HCO covariance type) robust standard errors. The pseudo-R-squared score is 32.54% while the p-value for LLR is below 5%. The null hypothesis for LLR is that the fit of the intercept-only model and causal model is equal is rejected. Every coefficient of exogenous variables is an important contributor to this model except for intercept. The p-value for intercept is 0.881.</p>
 
 ![image](https://user-images.githubusercontent.com/52142917/137193687-e4111f44-9e3d-4820-aefe-a1a469574a6a.png)
 
