@@ -38,7 +38,7 @@ See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capsto
 
 <p align = 'justify'>The permutation test can be instead used for testing the null hypothesis. This hypothesis is that two groups are within the same distribution. Since this hypothesis tests against 13 different measure codes, the alpha level with Bonferroni correction is 0.38%. The purpose of Bonferroni correction is to ensure that the chance of Type I Error is minimal.</p>
 
-![image](https://user-images.githubusercontent.com/52142917/137200477-17e9f1ab-2fbd-4e4d-8826-cac354706c91.png)
+![image](https://user-images.githubusercontent.com/52142917/137818719-e8b1fa63-c4f8-4104-b529-1f414e4632e7.png)
 
 <p align = 'justify'> The expected difference is by averaging scores tied with particular measure code and subtracting by these without the code. As indicated by the plot, the confidence interval is difficult to be seen due to small standard errors. The margins of errors are between 0.001 and 0.002. As the plot shown, the expected difference for catheter-related measure corde is lower than -40 while the expected difference for depressive-related measure code is higher than 60. Intuitively, the facilities are likely to perform poorly with treating residents who have catheters inserted and left in their bladders. The facilities do better with treating residents with depressive symptoms. However, this plot is not established with a causal relationship due to self-report bias (CMS, 2021).</p>
 
