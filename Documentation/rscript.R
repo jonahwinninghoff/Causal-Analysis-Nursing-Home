@@ -53,15 +53,13 @@ ggplot(data = compare, aes(x = score, fill=group, color=group)) +
 dev.off()
 
 # Read non_parametric tests
-directory= paste(getwd(),'Report/nonparametric_tests',sep='/')
+directory= paste(getwd(),'nonparametric_tests',sep='/')
 df <- read.csv(directory)
 
 # Manipulate data for plot
 df <- select(df, Variable, Difference.Value, Standard.Error, p_value)%>%
   mutate(CI_lower = Difference.Value - qnorm(0.05/(2*13),lower.tail = F)*Standard.Error)%>%
   mutate(CI_high = Difference.Value + qnorm(0.05/(2*13),lower.tail = F)*Standard.Error)
-  
-df$Variable <- strtrim(df$Variable,5)
 
 # Make plot
 ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Value)) + 
@@ -70,7 +68,7 @@ ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Val
   geom_errorbar(aes(ymin=CI_lower, ymax=CI_high), width=0.4,
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5)+
   coord_flip()+
-  labs(y="Expected difference (score between -100 - 100) with 99% CI", x=NULL)+
+  labs(y="Expected difference (quality score) with 99% CI", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
        panel.grid.minor = element_line(color = '#c7f3ff'),
        panel.grid.major = element_line(color = '#edfbff'),
@@ -87,7 +85,7 @@ ggplot(df, aes(x = reorder(Variable,Difference.Value,FUN=mean), y=Difference.Val
   geom_errorbar(aes(ymin=CI_lower, ymax=CI_high), width=0.4,
                 position=position_dodge(width=0.75),color='#00a8f0',size=0.5)+
   coord_flip()+
-  labs(y="Expected difference (score between -100 - 100) with 99% CI", x=NULL)+
+  labs(y="Expected difference (quality score) with 99% CI", x=NULL)+
   theme(panel.background = element_rect(fill = 'white'),
         panel.grid.minor = element_line(color = '#c7f3ff'),
         panel.grid.major = element_line(color = '#edfbff'),
