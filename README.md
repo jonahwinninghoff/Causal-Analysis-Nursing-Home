@@ -17,7 +17,7 @@ See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capsto
 
 ## KEY FINDINGS <a id = 'findings'></a>
 
-<p align="justify">Before the causal analytical discussion goes further, the key findings are worth mentioning. This analysis shows that based on health inspection rating during the COVID-19 pandemic, the license practical nurses do well. But when these nurses spend at least one hour with residents, the chance of getting a good health inspection rating is declined. Another important finding is having family on the council that helps provide more positive on health inspection rating. However, this involvement is not common. </p>
+<p align="justify">The analysis shows that based on the health inspection rate during the COVID-19 pandemic, the licensed practical nurses do well. However, when the licensed nurses spend at least one hour with the residents, the chances of good health inspection rating declines. Another important finding is having at least a family member involved with the decision-making process does boost positive health inspection ratings. However, family involvement is not common. </p>
 
 ## METHOD <a id='method'></a>
 
