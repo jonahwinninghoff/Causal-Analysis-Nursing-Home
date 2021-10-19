@@ -6,7 +6,7 @@
 
 **[Overview](#overview)** | **[Findings](#findings)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)** | **[Future](#future)** | **[References](#refer)**
 
-See the presentation ([PPT](https://github.com/jonahwinninghoff/Springboard-Capstone-Project-2-Causal-Analysis-Nursing-Home-Facilities/raw/main/Documentation/home_nurse.pptx) or )
+See the presentation ([PPT](https://github.com/jonahwinninghoff/Springboard-Capstone-Project-2-Causal-Analysis-Nursing-Home-Facilities/raw/main/Documentation/home_nurse.pptx) or [PDF](https://github.com/jonahwinninghoff/Springboard-Capstone-Project-2-Causal-Analysis-Nursing-Home-Facilities/blob/main/Documentation/home_nurse.pdf))
 
 See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capstone-Project-2-Causal-Analysis-Nursing-Home-Facilities/raw/main/Documentation/Report.pdf)
 
