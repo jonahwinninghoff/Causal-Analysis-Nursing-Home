@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/52142917/137962241-fa4a1f54-f0d5-4df4-a807-e00ae49fc77a.png)
+
+
 # Causal Analysis: Effects of Nursing Home Facilities on Health Inspection Rating
 
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-380/)
