@@ -4,7 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jonahwinninghoff/Springboard/graphs/commit-activity)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**[Overview](#overview)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)** | **[Future](#future)** | **[References](#refer)**
+**[Overview](#overview)** | **[Findings](findings)** | **[Method](#method)** | **[Datasets](#data)** | **[Statistics](#statistics)** | **[Wrangling](#wrangling)** | **[Modeling](#model)** | **[Econometrics](#econ)** | **[Insights](#insights)** | **[Future](#future)** | **[References](#refer)**
 
 See the [PowerPoint](https://github.com/jonahwinninghoff/Springboard-Capstone-Project-2-Causal-Analysis-Nursing-Home-Facilities/raw/main/Documentation/home_nurse.pptx)
 
@@ -14,6 +14,10 @@ See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capsto
 ## OVERVIEW <a id='overview'></a>
 
 <p align="justify"> Established by the United States Centers for Medicare and Medicaid Services (CMS) in 2009, the star rating is a system that helps family members to make decisions in which nursing home their senior family members would reside. The decision process to choosing the right facility is not simple. With the COVID-19 pandemic still happening, the system is a failure largely due to a lack of data audit and self-report bias. For example, the hypothesis testing is unable to confirm that the number of COVID-19 deaths at five-star facilities are different from one-star facilities on a significance level (Silver-Greenberg and Gebeloff, 2021). The stipulation in this study is that the CMS institution may face a massive decline in public trust. For that specific reason, the causal analysis is vital to addressing this problem.</p>
+
+## KEY FINDINGS <a id = 'findings'></a>
+
+<p align="justify">Before the causal analytical discussion goes further, the key findings are worth mentioning. This analysis shows that based on health inspection rating during the COVID-19 pandemic, the license practical nurses do well. But when these nurses spend at least one hour with residents, the chance of getting a good health inspection rating is declined. Another important finding is having family on the council that helps provide more positive on health inspection rating. However, this involvement is not common. </p>
 
 ## METHOD <a id='method'></a>
 
