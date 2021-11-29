@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 # Read the ecdf csv
-directory= paste(getwd(),'Report/ecdf',sep='/')
+directory= paste(getwd(),'ecdf',sep='/')
 df <- read.csv(directory)
 df <- select(df, empirical, theoretical)%>%
   mutate(group='empirical')%>%
