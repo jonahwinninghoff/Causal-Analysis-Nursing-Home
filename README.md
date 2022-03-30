@@ -82,7 +82,7 @@ See the [complete report](https://github.com/jonahwinninghoff/Springboard-Capsto
 
 <p align = 'justify'>For this analysis, the causal model does not follow A1 and A4 assumptions. The endogenous variable (or target variable) is limited between 1 and 5 points that is also known to be Limited Dependent Variable (LDV). The popular solution is logarithmic transformation without Monte Carlo simulation. The transformation is, unfortunately, incorrect. This particular model misspecification is called Duan's Smear (Goldstein, 2020).</p>
 
-<p align = 'justify'> The solution is to use nonlinear least square called Probit with Quasi-Maximum Likelihood Estimation condition (QMLE). This model is more efficient to heteroskedasticity. The heteroskedasticity is the variance of residual term that is not constant through the regression. For example, the causla model is consistent and asymptotically normal where V is not proportional to A. The assumption for consistency is:</p>
+<p align = 'justify'> The solution is to use nonlinear least square called Probit with Quasi-Maximum Likelihood Estimation condition (QMLE). This model is more efficient to heteroskedasticity. The heteroskedasticity is the variance of residual term that is not constant through the regression. For example, the causla model is consistent and asymptotically normal where V is proportional to A. The assumption for consistency is:</p>
 
 <div align = 'center'><img src="https://latex.codecogs.com/svg.image?\sqrt{n}(\hat\theta_{QMLE}&space;-&space;\theta_0)\sim^a&space;N(0,A^{-1}VA^{-1})&space;" title="\sqrt{n}\hat\theta_{QMLE} - \theta_0)\sim^a N(0,A^{-1}VA^{-1}) " /></div>
 
